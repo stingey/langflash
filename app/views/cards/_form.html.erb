@@ -1,0 +1,46 @@
+<%= form_with model: card, data: { controller: "card-form" } do |f| %>
+  <% if card.errors.any? %>
+    <div class="flash alert">
+      <p><strong>Please fix the following:</strong></p>
+      <ul>
+        <% card.errors.full_messages.each do |error| %>
+          <li><%= error %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :english_text, "English Word" %>
+    <%= f.text_field :english_text,
+        required: true,
+        autofocus: true,
+        data: {
+          action: "input->card-form#englishChanged blur->card-form#fetchSuggestions",
+          card_form_target: "englishInput"
+        } %>
+  </div>
+
+  <div class="field">
+    <%= f.label :spanish_text, "Spanish Translation" %>
+    <%= f.text_field :spanish_text,
+        required: true,
+        list: "spanish_suggestions",
+        data: {
+          card_form_target: "spanishInput",
+          action: "keydown.tab->card-form#acceptSuggestion"
+        } %>
+    <datalist id="spanish_suggestions" data-card-form-target="suggestionList"></datalist>
+    <small id="translation_suggestion" data-card-form-target="translationHint"></small>
+  </div>
+
+  <div class="field">
+    <%= f.label :part_of_speech, "Word Type" %>
+    <%= f.select :part_of_speech, [["Noun", "noun"], ["Verb", "verb"]], {}, { required: true } %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit class: "button" %>
+    <%= link_to "Cancel", cards_path, class: "button button-secondary" %>
+  </div>
+<% end %>

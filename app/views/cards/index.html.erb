@@ -1,0 +1,55 @@
+<h1>Your Cards</h1>
+<p><strong>Total cards:</strong> <span id="cards-total-count"><%= @cards.count %></span></p>
+<div class="actions">
+  <%= link_to "Add New Card", new_card_path, class: "button" %>
+  <%= button_to "Add 100 Most Common Nouns",
+                import_common_nouns_cards_path,
+                method: :post,
+                class: "button button-secondary" %>
+  <%= button_to "Add 100 Most Common Verbs",
+                import_common_verbs_cards_path,
+                method: :post,
+                class: "button button-secondary" %>
+</div>
+
+<nav class="filter-pills" aria-label="Card filters">
+  <% [
+    ["all", "All"],
+    ["nouns", "Nouns"],
+    ["verbs", "Verbs"],
+    ["mastered", "Mastered"],
+    ["needs_practice", "Needs Practice"]
+  ].each do |slug, label| %>
+    <%= link_to label,
+                cards_path(filter: slug),
+                class: "filter-pill#{' filter-pill-active' if @filter == slug}" %>
+  <% end %>
+</nav>
+
+<% if @cards.any? %>
+  <div class="cards-list">
+    <% @cards.each do |card| %>
+      <article id="<%= dom_id(card) %>" class="card card-tile">
+        <%= button_to card_path(card),
+                      method: :delete,
+                      class: "card-delete-button",
+                      title: "Delete card",
+                      aria: { label: "Delete #{card.english_text}" } do %>
+          <span aria-hidden="true">&#x2715;</span>
+        <% end %>
+        <h3><%= link_to card.english_text, card_path(card) %></h3>
+        <p><%= card.spanish_text %></p>
+      </article>
+    <% end %>
+  </div>
+<% else %>
+  <p>
+    <% case @filter
+       when "nouns" %>No noun cards yet.
+    <% when "verbs" %>No verb cards yet.
+    <% when "mastered" %>You haven't mastered any cards yet. Keep practicing!
+    <% when "needs_practice" %>Nice — no cards are giving you trouble right now.
+    <% else %>No cards yet.
+    <% end %>
+  </p>
+<% end %>

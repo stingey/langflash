@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  card: one
+  total_attempts: 1
+  correct_attempts: 1
+  incorrect_attempts: 1
+  streak: 1
+  mastery_score: 1.5
+  last_seen_at: 2026-04-19 11:48:22
+
+two:
+  user: two
+  card: two
+  total_attempts: 1
+  correct_attempts: 1
+  incorrect_attempts: 1
+  streak: 1
+  mastery_score: 1.5
+  last_seen_at: 2026-04-19 11:48:22

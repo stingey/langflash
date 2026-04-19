@@ -1,0 +1,22 @@
+<article class="card card-detail">
+  <div class="card-detail-field">
+    <h4 class="card-detail-label">English</h4>
+    <p class="card-detail-value"><%= @card.english_text %></p>
+  </div>
+
+  <div class="card-detail-field">
+    <h4 class="card-detail-label">Spanish</h4>
+    <p class="card-detail-value"><%= @card.spanish_text %></p>
+  </div>
+
+  <div class="card-detail-field">
+    <h4 class="card-detail-label">Type</h4>
+    <p class="card-detail-value"><%= @card.part_of_speech %></p>
+  </div>
+
+  <div class="actions">
+    <%= link_to "Edit", edit_card_path(@card), class: "button" %>
+    <%= button_to "Delete", card_path(@card), method: :delete, data: { turbo_confirm: "Delete this card?" }, class: "button button-danger" %>
+    <%= link_to "Back to Cards", cards_path, class: "button button-secondary" %>
+  </div>
+</article>

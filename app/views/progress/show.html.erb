@@ -1,0 +1,52 @@
+<h1>Your Progress</h1>
+
+<div class="stats-grid">
+  <div class="card">
+    <h3>Total Attempts</h3>
+    <p><%= @total_attempts %></p>
+  </div>
+  <div class="card">
+    <h3>Correct</h3>
+    <p><%= @correct_attempts %></p>
+  </div>
+  <div class="card">
+    <h3>Incorrect</h3>
+    <p><%= @incorrect_attempts %></p>
+  </div>
+  <div class="card">
+    <h3>Accuracy</h3>
+    <p><%= @accuracy %>%</p>
+  </div>
+</div>
+
+<section class="card">
+  <h2>Cards You Are Working On</h2>
+  <% if @weak_cards.any? %>
+    <ul>
+      <% @weak_cards.each do |stat| %>
+        <li>
+          <strong><%= stat.card.spanish_text %></strong>
+          (<%= stat.mastery_score %>% mastery, misses: <%= stat.incorrect_attempts %>)
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>No quiz data yet.</p>
+  <% end %>
+</section>
+
+<section class="card">
+  <h2>Strong Cards</h2>
+  <% if @strong_cards.any? %>
+    <ul>
+      <% @strong_cards.each do |stat| %>
+        <li>
+          <strong><%= stat.card.spanish_text %></strong>
+          (<%= stat.mastery_score %>% mastery, streak: <%= stat.streak %>)
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>No strong-card data yet.</p>
+  <% end %>
+</section>

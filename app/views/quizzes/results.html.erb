@@ -1,0 +1,32 @@
+<section class="quiz-results-screen">
+<h1>Quiz Results</h1>
+<p class="quiz-score"><strong>Score:</strong> <%= @correct_count %> / <%= @total_count %> (<%= @accuracy %>%)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Prompt</th>
+      <th>Your answer</th>
+      <th>Correct answer</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @attempts.each do |attempt| %>
+      <tr class="<%= attempt.correct ? "row-correct" : "row-incorrect" %>">
+        <td><%= attempt.position %></td>
+        <td><%= attempt.prompt_text %></td>
+        <td><%= attempt.selected_choice.presence || "(blank)" %></td>
+        <td><%= attempt.correct_choice %></td>
+        <td><%= attempt.correct ? "Correct" : "Incorrect" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<div class="actions">
+  <%= link_to "Back to Dashboard", dashboard_path, class: "button" %>
+  <%= button_to "Take Another Quiz", start_quiz_path(mode: :en_to_es), method: :post, class: "button button-secondary" %>
+</div>
+</section>

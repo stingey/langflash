@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  mode: 1
+  started_at: 2026-04-19 11:48:21
+  completed_at: 2026-04-19 11:48:21
+
+two:
+  user: two
+  mode: 1
+  started_at: 2026-04-19 11:48:21
+  completed_at: 2026-04-19 11:48:21

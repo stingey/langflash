@@ -2,23 +2,13 @@ require "json"
 require "net/http"
 
 class TranslationService
+  ENDPOINT = "https://api.mymemory.translated.net/get".freeze
+
   def self.translate_en_to_es(text)
     return nil if text.blank?
 
-    source_text = text.to_s.strip
-    query_text = contextual_query(source_text)
-
-    client = Google::Cloud::Translate::V2.new
-    response = client.translate(query_text, to: "es")
-    normalize_translation(response.text)
-  rescue StandardError => e
-    Rails.logger.warn("Translation failed: #{e.message}")
-    fallback_en_to_es(source_text)
-  end
-
-  def self.fallback_en_to_es(text)
-    query_text = contextual_query(text)
-    uri = URI("https://api.mymemory.translated.net/get")
+    query_text = contextual_query(text.to_s.strip)
+    uri = URI(ENDPOINT)
     uri.query = URI.encode_www_form(q: query_text, langpair: "en|es")
 
     response = Net::HTTP.get_response(uri)
@@ -28,7 +18,7 @@ class TranslationService
     translated = body.dig("responseData", "translatedText")
     normalize_translation(translated)
   rescue StandardError => e
-    Rails.logger.warn("Fallback translation failed: #{e.message}")
+    Rails.logger.warn("Translation failed: #{e.message}")
     nil
   end
 

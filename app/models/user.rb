@@ -9,6 +9,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  scope :admins, -> { where(admin: true) }
+
   def quiz_accuracy
     return 0.0 if quiz_attempts.count.zero?
 

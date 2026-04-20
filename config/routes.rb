@@ -10,6 +10,11 @@ Rails.application.routes.draw do
   get "dashboard", to: "dashboard#show"
   resource :progress, only: :show, controller: :progress
 
+  namespace :admin do
+    root to: "users#index"
+    resources :users, only: [:index, :show]
+  end
+
   resources :cards do
     collection do
       get :translate_suggestion

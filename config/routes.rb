@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   root "home#index"
 
   get "dashboard", to: "dashboard#show"
+  get "leaderboard", to: "leaderboards#index", as: :leaderboard
   resource :progress, only: :show, controller: :progress
 
   namespace :admin do

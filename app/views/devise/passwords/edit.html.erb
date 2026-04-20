@@ -1,0 +1,43 @@
+<% content_for(:title, "Set a new password") %>
+
+<div class="auth-shell">
+  <div class="auth-card">
+    <%= link_to "Langflash", root_path, class: "auth-brand" %>
+    <p class="auth-tagline">Choose a strong password you'll remember.</p>
+
+    <h1>Set a new password</h1>
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <%= form_for(resource, as: resource_name, url: password_path(resource_name),
+                 html: { method: :put }) do |f| %>
+      <%= f.hidden_field :reset_password_token %>
+
+      <div class="field">
+        <%= f.label :password, "New password" %>
+        <%= f.password_field :password,
+                             autofocus: true,
+                             autocomplete: "new-password",
+                             placeholder: "At least #{@minimum_password_length} characters" %>
+        <% if @minimum_password_length %>
+          <small style="color:#6b7280;">Use <%= @minimum_password_length %>+ characters.</small>
+        <% end %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password_confirmation, "Confirm new password" %>
+        <%= f.password_field :password_confirmation,
+                             autocomplete: "new-password",
+                             placeholder: "Repeat your new password" %>
+      </div>
+
+      <%= f.submit "Update password", class: "button auth-submit" %>
+    <% end %>
+
+    <div class="auth-divider">or</div>
+
+    <div class="auth-links">
+      <%= link_to "Back to login", new_session_path(resource_name) %>
+    </div>
+  </div>
+</div>

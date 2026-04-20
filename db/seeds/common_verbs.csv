@@ -1,101 +1,2001 @@
 english,spanish,part_of_speech
 to be,ser,verb
-to be (state),estar,verb
-to have,tener,verb
-to do,hacer,verb
-to say,decir,verb
+to have,haber,verb
 to go,ir,verb
-to see,ver,verb
-to give,dar,verb
-to know,saber,verb
-to want,querer,verb
-to come,venir,verb
-to find,encontrar,verb
-to put,poner,verb
+to do,hacer,verb
 to be able to,poder,verb
-to leave,salir,verb
-to follow,seguir,verb
-to be born,nacer,verb
-to live,vivir,verb
-to think,pensar,verb
-to speak,hablar,verb
-to bring,traer,verb
-to begin,empezar,verb
+to say,decir,verb
+to desire,querer,verb
+to see,ver,verb
+to know,saber,verb
 to believe,creer,verb
-to understand,entender,verb
-to wait,esperar,verb
-to look at,mirar,verb
-to call,llamar,verb
-to listen,escuchar,verb
-to read,leer,verb
-to write,escribir,verb
-to eat,comer,verb
-to drink,beber,verb
-to sleep,dormir,verb
-to wake up,despertar,verb
-to study,estudiar,verb
-to learn,aprender,verb
-to teach,enseñar,verb
-to ask,preguntar,verb
-to answer,responder,verb
-to play,jugar,verb
-to win,ganar,verb
-to lose,perder,verb
-to buy,comprar,verb
-to sell,vender,verb
-to pay,pagar,verb
-to cost,costar,verb
-to walk,caminar,verb
-to run,correr,verb
-to swim,nadar,verb
-to dance,bailar,verb
-to sing,cantar,verb
-to laugh,reír,verb
-to cry,llorar,verb
-to love,amar,verb
-to like,gustar,verb
-to hate,odiar,verb
-to forget,olvidar,verb
-to remember,recordar,verb
-to need,necesitar,verb
-to use,usar,verb
-to work,trabajar,verb
-to rest,descansar,verb
-to start,comenzar,verb
-to finish,terminar,verb
-to open,abrir,verb
-to close,cerrar,verb
-to break,romper,verb
-to fix,arreglar,verb
-to clean,limpiar,verb
-to wash,lavar,verb
-to cook,cocinar,verb
-to drive,conducir,verb
-to travel,viajar,verb
-to arrive,llegar,verb
-to enter,entrar,verb
-to return,volver,verb
-to send,enviar,verb
-to receive,recibir,verb
-to take,tomar,verb
-to carry,llevar,verb
+to give,dar,verb
+to owe,deber,verb
+to leave,dejar,verb
+to talk,hablar,verb
+to pass,pasar,verb
 to feel,sentir,verb
-to touch,tocar,verb
-to smell,oler,verb
-to taste,probar,verb
-to look for,buscar,verb
-to meet,conocer,verb
+to think,pensar,verb
+to hope,esperar,verb
+to come,venir,verb
+to look at,mirar,verb
+to need,necesitar,verb
+to take,llevar,verb
+to meet,encontrar,verb
+to return,volver,verb
+to summon,llamar,verb
+to seem,parecer,verb
+to arrive,llegar,verb
+to put,poner,verb
+to hear,oír,verb
+to go out,salir,verb
+to taste,gustar,verb
+to follow,seguir,verb
+to listen to,escuchar,verb
+to kill,matar,verb
+to seek,buscar,verb
 to help,ayudar,verb
-to change,cambiar,verb
-to choose,elegir,verb
-to allow,permitir,verb
-to build,construir,verb
-to destroy,destruir,verb
-to grow,crecer,verb
-to show,mostrar,verb
-to count,contar,verb
-to repeat,repetir,verb
+to lose,perder,verb
+to understand,entender,verb
+to finish,acabar,verb
+to treat,tratar,verb
+to work,trabajar,verb
 to die,morir,verb
+to live,vivir,verb
+to be worth,valer,verb
+to enter,entrar,verb
+to start,empezar,verb
+to achieve,conseguir,verb
+to ask for something,pedir,verb
+to try,intentar,verb
+to bring,traer,verb
+to matter,importar,verb
+to ask,preguntar,verb
+to suppose,suponer,verb
+to remember,recordar,verb
+to change,cambiar,verb
+to use,usar,verb
+to eat,comer,verb
+to put out,sacar,verb
+to keep,mantener,verb
+to count,contar,verb
+to forget,olvidar,verb
+to worry,preocupar,verb
+to gain,ganar,verb
+to open,abrir,verb
+to play,jugar,verb
+to happen,ocurrir,verb
+to pay,pagar,verb
+to allow,permitir,verb
+to receive,recibir,verb
+to read,leer,verb
+to signify,significar,verb
+to sleep,dormir,verb
 to fall,caer,verb
-to throw,lanzar,verb
+to send,enviar,verb
+to bring close,acercar,verb
+to move,mover,verb
+to buy,comprar,verb
+to begin,comenzar,verb
+to throw,echar,verb
+to convert,convertir,verb
+to touch,tocar,verb
+to write,escribir,verb
+to put in,meter,verb
+to detain,detener,verb
+to decide,decidir,verb
+to run,correr,verb
+to present,presentar,verb
+to exist,existir,verb
+to show,mostrar,verb
+to go up or come up,subir,verb
+to serve,servir,verb
+to seat,sentar,verb
+to save,salvar,verb
+to explain,explicar,verb
+to lift,levantar,verb
+to consider,considerar,verb
+to secure,asegurar,verb
+to accept,aceptar,verb
+to remove,quitar,verb
+to love,amar,verb
+to shoot,disparar,verb
+to excuse,disculpar,verb
+to drink,beber,verb
+to sell,vender,verb
+to pardon,perdonar,verb
+to appear,aparecer,verb
+to marry,casar,verb
+to get,lograr,verb
+to rob,robar,verb
+to promise,prometer,verb
+to teach,enseñar,verb
+to discover,descubrir,verb
+to walk,andar,verb
+to sound,sonar,verb
+to report,referir,verb
+to charm,encantar,verb
+to imagine,imaginar,verb
+to learn,aprender,verb
+to carry out,realizar,verb
+to reassure,confiar,verb
+to calm,callar,verb
+to close,cerrar,verb
+to offer,ofrecer,verb
+to go down,bajar,verb
+to wish,desear,verb
+to look after,cuidar,verb
+to prepare,preparar,verb
+to choose,elegir,verb
+to stop,parar,verb
+to disappear,desaparecer,verb
+to lie,mentir,verb
+to break,romper,verb
+to invite,invitar,verb
+to obtain,obtener,verb
+to bother,molestar,verb
+to wake,despertar,verb
+to result,resultar,verb
+to continue,continuar,verb
+to answer,responder,verb
+to fix,arreglar,verb
+to produce,producir,verb
+to weigh,pesar,verb
+to prove,probar,verb
+to be enough,bastar,verb
+to avoid,evitar,verb
+to be accustomed to doing something,soler,verb
+to recognize,reconocer,verb
+to escape,escapar,verb
+to fulfil,cumplir,verb
+to divide,partir,verb
+to fear,temer,verb
+to make happy,alegrar,verb
+to cry,llorar,verb
+to mark with two lines each of the debit and date items of a commercial book,tranquilar,verb
+to act,actuar,verb
+to prefer,preferir,verb
+to drive,conducir,verb
+to sing,cantar,verb
+to protect,proteger,verb
+to suffer,sufrir,verb
+to hit,golpear,verb
+to abandon,abandonar,verb
+to create,crear,verb
+to direct,dirigir,verb
+to collect,recoger,verb
+to occupy,ocupar,verb
+to murder,asesinar,verb
+to fly,volar,verb
+to gather,reunir,verb
+to grow,crecer,verb
+to reach,alcanzar,verb
+to annoy,joder,verb
+to destroy,destruir,verb
+to deliver,entregar,verb
+to accompany,acompañar,verb
+to gauge,aforar,verb
+to recover,recuperar,verb
+to deserve,merecer,verb
+to dance,bailar,verb
+to include,incluir,verb
+to laugh,reír,verb
+to cut,cortar,verb
+to form,formar,verb
+to fight,luchar,verb
+to study,estudiar,verb
+to resolve,resolver,verb
+to control,controlar,verb
+to observe,observar,verb
+to attack,atacar,verb
+to signal,señalar,verb
+to deny,negar,verb
+to be born,nacer,verb
+to find out,averiguar,verb
+to hide,esconder,verb
+to cost,costar,verb
+to release,soltar,verb
+to shout,gritar,verb
+to reply,contestar,verb
+to swear,jurar,verb
+to thank,agradecer,verb
+to unite,unir,verb
+to enjoy,disfrutar,verb
+to bet,apostar,verb
+to hate,odiar,verb
+to agree,acordar,verb
+to confront,enfrentar,verb
+to represent,representar,verb
+to build,construir,verb
+to mention,mencionar,verb
+to revise,revisar,verb
+to capture,atrapar,verb
+to handle,manejar,verb
+to interest,interesar,verb
+to dismiss,despedir,verb
+to remove to a distance,alejar,verb
+to commit,cometer,verb
+to flee,huir,verb
+to inform,informar,verb
+to find something,hallar,verb
+to depend,depender,verb
+to share,compartir,verb
+to kiss,besar,verb
+to belong,pertenecer,verb
+to repeat ),repetir,verb
+to trick,engañar,verb
+to cover,cubrir,verb
+to stay,permanecer,verb
+to travel,viajar,verb
+to separate,apartar,verb
+to scare,asustar,verb
+to develop,desarrollar,verb
+to lend,prestar,verb
+to discuss,discutir,verb
+to stick,pegar,verb
+to defend,defender,verb
+to surpass,superar,verb
+to lean,apoyar,verb
+to hurt,doler,verb
+to smell,oler,verb
+to joke,bromear,verb
+to clean,limpiar,verb
+to entrust,encargar,verb
+to declare,declarar,verb
+to place,colocar,verb
+to visit,visitar,verb
+to indicate,indicar,verb
+to cause,causar,verb
+to state,afirmar,verb
+to celebrate,celebrar,verb
+to entertain,divertir,verb
+to check,comprobar,verb
+to dine,cenar,verb
+to rest,descansar,verb
+to ruin,arruinar,verb
+to investigate,investigar,verb
+to intend,pretender,verb
+to grab or take hold of,agarrar,verb
+to survive,sobrevivir,verb
+to establish,establecer,verb
+to order,ordenar,verb
+to cause or provoke,provocar,verb
+to surprise,sorprender,verb
+to publish,publicar,verb
+to augment,añadir,verb
+to propose,proponer,verb
+to warn,advertir,verb
+to cross,cruzar,verb
+to lay,acostar,verb
+to breathe,respirar,verb
+to watch over,vigilar,verb
+to confirm,confirmar,verb
+to mistake,equivocar,verb
+to bear,soportar,verb
+to participate,participar,verb
+to increase,aumentar,verb
 to jump,saltar,verb
+to liberate,liberar,verb
+to arrest,arrestar,verb
+to suggest,sugerir,verb
+to tell,avisar,verb
+to hold,aguantar,verb
+to be lacking,faltar,verb
+to force,obligar,verb
+to register,registrar,verb
+to announce,anunciar,verb
+to express,expresar,verb
+to smoke,fumar,verb
+to make better,mejorar,verb
+to note,notar,verb
+to contract,contratar,verb
+to point,apuntar,verb
+to assume,asumir,verb
+to dream,soñar,verb
+to embolden,atrever,verb
+to extinguish,apagar,verb
+to delay,tardar,verb
+to sign,firmar,verb
+to convince,convencer,verb
+to paint,pintar,verb
+to pay attention to,atender,verb
+to reject,rechazar,verb
+to insist,insistir,verb
+to identify,identificar,verb
+to constitute,constituir,verb
+to make use of,aprovechar,verb
+to smile,sonreír,verb
+to impede,impedir,verb
+to relax,relajar,verb
+to hang,colgar,verb
+to affect,afectar,verb
+to dedicate,dedicar,verb
+to contain,contener,verb
+to doubt,dudar,verb
+to burn,quemar,verb
+to guess,adivinar,verb
+to round up,rodear,verb
+to plan,planear,verb
+to eliminate,eliminar,verb
+to possess,poseer,verb
+to make and form buttonholes,ojalar,verb
+to undo,deshacer,verb
+to demand,exigir,verb
+to fill something up,llenar,verb
+to pursue,perseguir,verb
+to renounce,renunciar,verb
+to conquer,rendir,verb
+to request,solicitar,verb
+to describe,describir,verb
+to light,encender,verb
+to reduce,reducir,verb
+to chase away,largar,verb
+to charge,cobrar,verb
+to spend,gastar,verb
+to invent,inventar,verb
+to require,requerir,verb
+to accuse,acusar,verb
+to last,durar,verb
+to reveal,revelar,verb
+to mount,montar,verb
+to respect,respetar,verb
+to manifest,manifestar,verb
+to correspond to,corresponder,verb
+to dress,vestir,verb
+to push,empujar,verb
+to injure,lastimar,verb
+to wash,lavar,verb
+to advance happen at an earlier time or date),avanzar,verb
+to confess,confesar,verb
+to practice,practicar,verb
+to organize,organizar,verb
+to not know,ignorar,verb
+to pull out,arrancar,verb
+to vote,votar,verb
+to fail,fallar,verb
+to conserve,conservar,verb
+to beg,rogar,verb
+to add,agregar,verb
+to approve,aprobar,verb
+to greet,saludar,verb
+to communicate,comunicar,verb
+to feed,alimentar,verb
+to pretend,fingir,verb
+to interrupt,interrumpir,verb
+to load ),cargar,verb
+to adore,adorar,verb
+to attend,asistir,verb
+to exploit,explotar,verb
+to tolerate,resistir,verb
+to analyze,analizar,verb
+to comment,comentar,verb
+to clarify,aclarar,verb
+to drag,arrastrar,verb
+to blame,culpar,verb
+to attract,atraer,verb
+to bring up,plantear,verb
+to coincide,coincidir,verb
+to emphasize,destacar,verb
+to concentrate,concentrar,verb
+to venture,arriesgar,verb
+to rear or raise,criar,verb
+to tend to,tender,verb
+to judge,juzgar,verb
+to operate,operar,verb
+to cook,cocinar,verb
+to install,instalar,verb
+to transform,transformar,verb
+to impose,imponer,verb
+to grant,conceder,verb
+to appreciate,apreciar,verb
+to defeat,vencer,verb
+to miss,extrañar,verb
+to pray,rezar,verb
+to interpret,interpretar,verb
+to determine,determinar,verb
+to acquire,adquirir,verb
+to record,grabar,verb
+to violate,violar,verb
+to deepen,profundar,verb
+to involve,comportar,verb
+to proceed,proceder,verb
+to fit,caber,verb
+to insert,introducir,verb
+to betray,traicionar,verb
+to generate,generar,verb
+to enamor,enamorar,verb
+to turn,girar,verb
+to adopt,adoptar,verb
+to hug,abrazar,verb
+to cancel,cancelar,verb
+to extend,extender,verb
+to dominate,dominar,verb
+to lock up,encerrar,verb
+to pressure,presionar,verb
+to define,definir,verb
+to mark,marcar,verb
+to recommend,recomendar,verb
+to shine,lucir,verb
+to conclude,concluir,verb
+to guarantee,garantizar,verb
+to sink,hundir,verb
+to bite,morder,verb
+to threaten,amenazar,verb
+to experiment,experimentar,verb
+to integrate,integrar,verb
+to remedy,curar,verb
+to drain,apurar,verb
+to catch,capturar,verb
+to transmit,transmitir,verb
+to erase,borrar,verb
+to drown,ahogar,verb
+to contemplate,contemplar,verb
+to give as a present,regalar,verb
+to compose,componer,verb
+to contact,contactar,verb
+to denounce,denunciar,verb
+to issue,emitir,verb
+to consist of,consistir,verb
+to bury,enterrar,verb
+to intervene,intervenir,verb
+to measure,medir,verb
+to suspect,sospechar,verb
+to connect,conectar,verb
+to negotiate,negociar,verb
+to detect,detectar,verb
+to provide,proporcionar,verb
+to kidnap,secuestrar,verb
+to examine,examinar,verb
+to inspire,animar,verb
+to solve,solucionar,verb
+to accede,acceder,verb
+to stroll,pasear,verb
+to accustom,acostumbrar,verb
+to translate,traducir,verb
+to imply,implicar,verb
+to incorporate,incorporar,verb
+to confuse,confundir,verb
+to exercise,ejercer,verb
+to expel,expulsar,verb
+to train,entrenar,verb
+to stink,apestar,verb
+to swim,nadar,verb
+to exhibit,exponer,verb
+to tour,recorrer,verb
+to interrogate,interrogar,verb
+to contribute,contribuir,verb
+to squeeze,apretar,verb
+to shit,cagar,verb
+to wound,herir,verb
+to reflect,reflejar,verb
+to facilitate,facilitar,verb
+to block,bloquear,verb
+to back up,retroceder,verb
+to admire,admirar,verb
+to hunt,cazar,verb
+to commit suicide,suicidar,verb
+to obey,obedecer,verb
+to please,agradar,verb
+to lament,lamentar,verb
+to base on,basar,verb
+to consume,consumir,verb
+to reclaim,reclamar,verb
+to bless,bendecir,verb
+to rain,llover,verb
+to swallow,tragar,verb
+to combine,juntar,verb
+to join,ingresar,verb
+to toast,brindar,verb
+to rescue,rescatar,verb
+to film,filmar,verb
+to cede,ceder,verb
+to retain,retener,verb
+to perceive,percibir,verb
+to offend,ofender,verb
+to track,rastrear,verb
+to tilt,inclinar,verb
+to tie,atar,verb
+to complete,completar,verb
+to call,convocar,verb
+to decrease,disminuir,verb
+to replace,sustituir,verb
+to consult,consultar,verb
+to calculate,calcular,verb
+to limit,limitar,verb
+to kick,patear,verb
+to modify,modificar,verb
+to elevate,elevar,verb
+to compare,comparar,verb
+to anger,enojar,verb
+to react,reaccionar,verb
+to roll,rodar,verb
+to found,fundar,verb
+to find,localizar,verb
+to annotate,anotar,verb
+to punish,castigar,verb
+to outwit,burlar,verb
+to shame,avergonzar,verb
+to pit,oponer,verb
+to vomit,vomitar,verb
+to rent,alquilar,verb
+to situate,situar,verb
+to draw,dibujar,verb
+to manufacture,fabricar,verb
+to mix,mezclar,verb
+to justify,justificar,verb
+to distinguish,distinguir,verb
+to land,aterrizar,verb
+to sacrifice,sacrificar,verb
+to name,nombrar,verb
+to bring forward,adelantar,verb
+to notice,reparar,verb
+to criticize,criticar,verb
+to hire,emplear,verb
+to execute,ejecutar,verb
+to govern,gobernar,verb
+to guide,guiar,verb
+to compete,competir,verb
+to verify,verificar,verb
+to esteem,estimar,verb
+to heat,calentar,verb
+to tremble,temblar,verb
+to explode,estallar,verb
+to tire,cansar,verb
+to address,abordar,verb
+to derive,derivar,verb
+to ascend,ascender,verb
+to focus,centrar,verb
+to invest,invertir,verb
+to plant,plantar,verb
+to advise,aconsejar,verb
+to steady,sujetar,verb
+to beat,batir,verb
+to rule out,descartar,verb
+to bring down,derribar,verb
+to value,valorar,verb
+to fish,pescar,verb
+to wait,aguardar,verb
+to cite,citar,verb
+to eat lunch,almorzar,verb
+to hustle,timar,verb
+to combat or fight,combatir,verb
+to increment,incrementar,verb
+to be superfluous,sobrar,verb
+to bleed,sangrar,verb
+to feel like,apetecer,verb
+to resort to,recurrir,verb
+to suck,chupar,verb
+to descend,descender,verb
+to transport,transportar,verb
+to pronounce,pronunciar,verb
+to fold,doblar,verb
+to support,favorecer,verb
+to bind,vincular,verb
+to invade,invadir,verb
+to extract,extraer,verb
+to alter,alterar,verb
+to program,programar,verb
+to impel,impulsar,verb
+to fuck,follar,verb
+to promote,promover,verb
+to originate,provenir,verb
+to relate,relacionar,verb
+to interview,entrevistar,verb
+to subdue,someter,verb
+to shake off,sacudir,verb
+to encourage,esforzar,verb
+to insult,insultar,verb
+to lack,carecer,verb
+to worsen,empeorar,verb
+to compensate,compensar,verb
+to forbid,prohibir,verb
+to crash,chocar,verb
+to arm,armar,verb
+to torture,torturar,verb
+to cease,cesar,verb
+to avenge,vengar,verb
+to accelerate,acelerar,verb
+to accumulate,acumular,verb
+to assign,atribuir,verb
+to transfer,transferir,verb
+to link,ligar,verb
+to project,proyectar,verb
+to impress,impresionar,verb
+to qualify,calificar,verb
+to dictate,dictar,verb
+to finalize,finalizar,verb
+to adapt,adaptar,verb
+to benefit,beneficiar,verb
+to question,cuestionar,verb
+to manipulate,manipular,verb
+to adjust,ajustar,verb
+to bore,aburrir,verb
+to step,pisar,verb
+to break a fast,desayunar,verb
+to piss,mear,verb
+to collaborate,colaborar,verb
+to congratulate,felicitar,verb
+to quicken,apresurar,verb
+to bathe,bañar,verb
+to satisfy,satisfacer,verb
+to condemn,condenar,verb
+to sweat,sudar,verb
+to suspend,suspender,verb
+to influence,influir,verb
+to copy,copiar,verb
+to crush,aplastar,verb
+to defy,afrontar,verb
+to stab,apuñalar,verb
+to distribute,distribuir,verb
+to be or seem evident,constar,verb
+to preside,presidir,verb
+to protest,protestar,verb
+to damage,dañar,verb
+to waste,desperdiciar,verb
+to correct,corregir,verb
+to float,flotar,verb
+to exaggerate,exagerar,verb
+to conceive,concebir,verb
+to displace,desplazar,verb
+to prevent,prevenir,verb
+to navigate,navegar,verb
+to blow,soplar,verb
+to evaluate,evaluar,verb
+to designate,designar,verb
+to enjoy oneself,gozar,verb
+to brake,frenar,verb
+to explore,explorar,verb
+to inhale,aspirar,verb
+to divert,desviar,verb
+to finance,financiar,verb
+to spit,escupir,verb
+to drive crazy,enloquecer,verb
+to penetrate,penetrar,verb
+to boil,hervir,verb
+to reproduce,reproducir,verb
+to intoxicate,emborrachar,verb
+to interfere,interferir,verb
+to position,ubicar,verb
+to caress,acariciar,verb
+to renovate,renovar,verb
+to rehearse,ensayar,verb
+to deposit,depositar,verb
+to spy,espiar,verb
+to slide,deslizar,verb
+to divorce,divorciar,verb
+to administer,administrar,verb
+to spread,difundir,verb
+to reserve,reservar,verb
+to make,elaborar,verb
+to donate,donar,verb
+to untie,desatar,verb
+to approach,aproximar,verb
+to orient,orientar,verb
+to activate,activar,verb
+to challenge,desafiar,verb
+to wrap,envolver,verb
+to formulate,formular,verb
+to meow,miar,verb
+to inherit,heredar,verb
+to underline,subrayar,verb
+to illuminate,iluminar,verb
+to dry,secar,verb
+to design,diseñar,verb
+to nail,clavar,verb
+to make ill,enfermar,verb
+to disappoint,decepcionar,verb
+to lead,encabezar,verb
+to exclude,excluir,verb
+to absorb,absorber,verb
+to freeze,congelar,verb
+to unload,descargar,verb
+to cool,enfriar,verb
+to burst,reventar,verb
+to cause a person to faint,desmayar,verb
+to undertake,emprender,verb
+to cloy,fastidiar,verb
+to excavate,cavar,verb
+to pass away,fallecer,verb
+to testify,testificar,verb
+to rot,pudrir,verb
+to assault,asaltar,verb
+to inscribe,inscribir,verb
+to not be familiar with,desconocer,verb
+to detach,despegar,verb
+to pack,empacar,verb
+to opt,optar,verb
+to cooperate,cooperar,verb
+to interchange,intercambiar,verb
+to pass by,transcurrir,verb
+to imitate,imitar,verb
+to clear,despejar,verb
+to shake,agitar,verb
+to triumph,triunfar,verb
+to rebuild,reconstruir,verb
+to seduce,seducir,verb
+to stimulate,estimular,verb
+to insinuate,insinuar,verb
+to chat,charlar,verb
+to abuse,abusar,verb
+to circulate,circular,verb
+to grasp,aferrar,verb
+to run over,atropellar,verb
+to tarry,demorar,verb
+to lower,agachar,verb
+to norm,normar,verb
+to trip,tropezar,verb
+to spill,derramar,verb
+to foresee,prever,verb
+to inform on,delatar,verb
+to paralyze,paralizar,verb
+to use for the first time,estrenar,verb
+to authorize,autorizar,verb
+to characterize,caracterizar,verb
+to refill,rellenar,verb
+to shave,afeitar,verb
+to urinate,orinar,verb
+to graduate,graduar,verb
+to applaud,aplaudir,verb
+to fry,freír,verb
+to inhabit,habitar,verb
+to detest,detestar,verb
+to empty,vaciar,verb
+to inaugurate,inaugurar,verb
+to annul,anular,verb
+to stretch,estirar,verb
+to evolve,evolucionar,verb
+to deduce,deducir,verb
+to proclaim,proclamar,verb
+to process,procesar,verb
+to sift,colar,verb
+to lighten,aliviar,verb
+to exhaust,agotar,verb
+to reinforce,reforzar,verb
+to complicate,complicar,verb
+to remit,remitir,verb
+to interpose,interponer,verb
+to cultivate,cultivar,verb
+to multiply,multiplicar,verb
+to summarize,resumir,verb
+to smash,estrellar,verb
+to reside,residir,verb
+to stir,remover,verb
+to dispute,disputar,verb
+to house,alojar,verb
+to itch,picar,verb
+to print,imprimir,verb
+to predict,predecir,verb
+to set fire to,incendiar,verb
+to make wet,mojar,verb
+to flow,fluir,verb
+to settle,asentar,verb
+to review,repasar,verb
+to strangle,estrangular,verb
+to deploy,desplegar,verb
+to relieve from care,descuidar,verb
+to terrify,aterrorizar,verb
+to select,seleccionar,verb
+to whisper,susurrar,verb
+to differentiate,diferenciar,verb
+to consolidate,consolidar,verb
+to devour,devorar,verb
+to fortify,fortalecer,verb
+to accommodate,acomodar,verb
+to demolish,derrumbar,verb
+to hang out in someone's house,ranchar,verb
+to make someone kneel,arrodillar,verb
+to inject,inyectar,verb
+to presume,presumir,verb
+to excite,excitar,verb
+to sew,coser,verb
+to expand,expandir,verb
+to rule,regir,verb
+to honor,honrar,verb
+to despise,despreciar,verb
+to prolong,prolongar,verb
+to praise,alabar,verb
+to decipher,descifrar,verb
+to lynch,ahorcar,verb
+to sigh,suspirar,verb
+to snatch,arrebatar,verb
+to damn,maldecir,verb
+to liquidate,liquidar,verb
+to number,numerar,verb
+to park,estacionar,verb
+to empower,apoderar,verb
+to pour,verter,verb
+to store,almacenar,verb
+to weaken,debilitar,verb
+to embrace,abarcar,verb
+to generalize,generalizar,verb
+to witness,presenciar,verb
+to calibrate,calibrar,verb
+to associate,asociar,verb
+to vanish,desvanecer,verb
+to poison,envenenar,verb
+to burst into,irrumpir,verb
+to bounce,resaltar,verb
+to humiliate,humillar,verb
+to evacuate,evacuar,verb
+to imprison,encarcelar,verb
+to get old,envejecer,verb
+to scale,escalar,verb
+to torment,atormentar,verb
+to revive,revivir,verb
+to cite as a defence or justification for one's actions,alegar,verb
+to console,consolar,verb
+to flower,florecer,verb
+to resuscitate,resucitar,verb
+to subtract,restar,verb
+to star in,protagonizar,verb
+to write up,redactar,verb
+to pose,posar,verb
+to bring about,propiciar,verb
+to undress,desnudar,verb
+to embark,embarcar,verb
+to dirty,ensuciar,verb
+to haul,halar,verb
+to tempt,tentar,verb
+to slip,resbalar,verb
+to argue,argumentar,verb
+to consent,consentir,verb
+to plough,arar,verb
+to educate,educar,verb
+to put to flight,fugar,verb
+to come across,topar,verb
+to mount an animal,cabalgar,verb
+to progress,progresar,verb
+to recruit,reclutar,verb
+to group together,agrupar,verb
+to classify,clasificar,verb
+to feign,simular,verb
+to upset,inquietar,verb
+to notify,notificar,verb
+to knock over,tumbar,verb
+to concern,concernir,verb
+to rub,frotar,verb
+to date,datar,verb
+to infiltrate,infiltrar,verb
+to level,arrasar,verb
+to preserve,preservar,verb
+to concrete,concretar,verb
+to underestimate,subestimar,verb
+to frighten away,remontar,verb
+to intimidate,intimidar,verb
+to update,actualizar,verb
+to fade,ajar,verb
+to filter,filtrar,verb
+to baptize,bautizar,verb
+to thrill,emocionar,verb
+to retake,retomar,verb
+to photograph,fotografiar,verb
+to relate to,respectar,verb
+to melt,derretir,verb
+to darken,oscurecer,verb
+to puncture,pinchar,verb
+to reiterate,reiterar,verb
+to supervise,supervisar,verb
+to diagnose,diagnosticar,verb
+to fascinate,fascinar,verb
+to bomb,bombardear,verb
+to clear or scrape land,rozar,verb
+to drug,drogar,verb
+to suppress,suprimir,verb
+to debate,debatir,verb
+to enrich,enriquecer,verb
+to appeal,apelar,verb
+to dissolve,disolver,verb
+to trace,trazar,verb
+to emerge,emerger,verb
+to foster,fomentar,verb
+to sweep,barrer,verb
+to subscribe,suscribir,verb
+to isolate,aislar,verb
+to cure,sanar,verb
+to ratify,ratificar,verb
+to disconnect,desconectar,verb
+to murmur,murmurar,verb
+to sentence,sentenciar,verb
+to intercept,interceptar,verb
+to stamp,sellar,verb
+to precipitate,precipitar,verb
+to motivate,motivar,verb
+to specify,especificar,verb
+to defraud,defraudar,verb
+to infect,contagiar,verb
+to envy,envidiar,verb
+to press,pulsar,verb
+to articulate,articular,verb
+to meditate,meditar,verb
+to entangle,enredar,verb
+to clamber,trepar,verb
+to culminate,culminar,verb
+to lick,lamer,verb
+to peel,pelar,verb
+to murder someone,victimar,verb
+to idle,vagar,verb
+to mature,madurar,verb
+to commit a violent or criminal attack,atentar,verb
+to whip,azotar,verb
+to color,teñir,verb
+to submerge,sumergir,verb
+to adorn,adornar,verb
+to chew,masticar,verb
+to pawn,empeñar,verb
+to exceed,exceder,verb
+to scratch,rascar,verb
+to mistreat,maltratar,verb
+to refuse,rehusar,verb
+to postpone,posponer,verb
+to consecrate,consagrar,verb
+to plot,tramar,verb
+to accentuate,acentuar,verb
+to familiarize,familiarizar,verb
+to precede,preceder,verb
+to camp,acampar,verb
+to recite,recitar,verb
+to flirt,coquetear,verb
+to narrate,narrar,verb
+to invoke,invocar,verb
+to appoint,destinar,verb
+to shower,duchar,verb
+to mobilize,movilizar,verb
+to refresh,refrescar,verb
+to replicate,replicar,verb
+to bark,ladrar,verb
+to resign,dimitir,verb
+to restore,restaurar,verb
+to misinterpret,malinterpretar,verb
+to get fat,engordar,verb
+to equip,equipar,verb
+to exclaim,exclamar,verb
+to pull,jalar,verb
+to assimilate,asimilar,verb
+to improvise,improvisar,verb
+to telephone,telefonear,verb
+to unchain,desencadenar,verb
+to allude,aludir,verb
+to infuriate,enfurecer,verb
+to be equivalent,equivaler,verb
+to lurk,acechar,verb
+to bud or sprout,brotar,verb
+to persuade,persuadir,verb
+to masturbate,masturbar,verb
+to prosper,prosperar,verb
+to plane,dolar,verb
+to renew,reanudar,verb
+to irrigate,regar,verb
+to indemnify,recompensar,verb
+to loosen,aflojar,verb
+to coordinate,coordinar,verb
+to stabilize,estabilizar,verb
+to circumvent,eludir,verb
+to re-create,recrear,verb
+to alert,alertar,verb
+to have a feeling,presentir,verb
+to nominate,postular,verb
+to bribe,sobornar,verb
+to blackmail,chantajear,verb
+to disperse,dispersar,verb
+to provoke,suscitar,verb
+to watch,velar,verb
+to narrow,estrechar,verb
+to entail,conllevar,verb
+to persist,persistir,verb
+to implant,implantar,verb
+to lengthen,alargar,verb
+to cohabit,convivir,verb
+to hook,enganchar,verb
+to execute by firing squad,fusilar,verb
+to knit,tejer,verb
+to confiscate,confiscar,verb
+to aggravate,agravar,verb
+to inspect,inspeccionar,verb
+to deprive,privar,verb
+to comb,peinar,verb
+to swindle,estafar,verb
+to medicate,medicar,verb
+to deactivate,desactivar,verb
+to whistle,silbar,verb
+to conceal,encubrir,verb
+to scatter,esparcir,verb
+to make equal,igualar,verb
+to amaze,asombrar,verb
+to transcend,trascender,verb
+to flood,inundar,verb
+to double,duplicar,verb
+to evoke,evocar,verb
+to reconsider,reconsiderar,verb
+to cast off,desechar,verb
+to patrol,rondar,verb
+to do without,prescindir,verb
+to agree upon,pactar,verb
+to erode,desmoronar,verb
+to tear,desgarrar,verb
+to impact,impactar,verb
+to abort,abortar,verb
+to impart,impartir,verb
+to preach,predicar,verb
+to oscillate,oscilar,verb
+to disguise,disfrazar,verb
+to fall to,recaer,verb
+to escort,escoltar,verb
+to dodge,esquivar,verb
+to ingest,ingerir,verb
+to contradict,contradecir,verb
+to propagate,propagar,verb
+to make difficult,dificultar,verb
+to hesitate,vacilar,verb
+to pass a law,sancionar,verb
+to perfect,perfeccionar,verb
+to irritate,irritar,verb
+to sustain,sustentar,verb
+to crop,recortar,verb
+to shelter,refugiar,verb
+to prevail,prevalecer,verb
+to perturb,perturbar,verb
+to give birth,parir,verb
+to refute,desmentir,verb
+to annihilate,aniquilar,verb
+to splatter,salpicar,verb
+to twist,torcer,verb
+to cause to collapse,colapsar,verb
+to cough,toser,verb
+to root,radicar,verb
+to stick out,sobresalir,verb
+to soften,esfumar,verb
+to smuggle,traficar,verb
+to repose,reposar,verb
+to evade,evadir,verb
+to sprinkle,rociar,verb
+to exhume,desenterrar,verb
+to abound,abundar,verb
+to arrange,concertar,verb
+to hallucinate,alucinar,verb
+to adhere,adherir,verb
+to asphyxiate,asfixiar,verb
+to manage,gestionar,verb
+to frequent,frecuentar,verb
+to skate,patinar,verb
+to decorate,decorar,verb
+to converge,concurrir,verb
+to revert,revertir,verb
+to machinate,maquinar,verb
+to shrink,encoger,verb
+to dislike,disgustar,verb
+to absolve,absolver,verb
+to disembark,desembarcar,verb
+to vibrate,vibrar,verb
+to wring,retorcer,verb
+to overwhelm,abrumar,verb
+to reason,razonar,verb
+to complement,complementar,verb
+to contrast,contrastar,verb
+to long for,anhelar,verb
+to reproach,reprochar,verb
+to make proud,enorgullecer,verb
+to conspire,conspirar,verb
+to line up,alinear,verb
+to devise,idear,verb
+to rend,rasgar,verb
+to illustrate,ilustrar,verb
+to speculate,especular,verb
+to sabotage,sabotear,verb
+to rebel against,rebelar,verb
+to paddle,remar,verb
+to berth,atracar,verb
+to spot,manchar,verb
+to coil up,enrollar,verb
+to intensify,intensificar,verb
+to decree,decretar,verb
+to neutralise,neutralizar,verb
+to have influence or affect on,incidir,verb
+to divulge,divulgar,verb
+to frame,enmarcar,verb
+to degrade,degradar,verb
+to be reborn,renacer,verb
+to engender,engendrar,verb
+to bestow,conferir,verb
+to sack,saquear,verb
+to corroborate,corroborar,verb
+to straighten,enderezar,verb
+to intuit,intuir,verb
+to disobey,desobedecer,verb
+to incriminate,incriminar,verb
+to depress,deprimir,verb
+to split,rajar,verb
+to wail,gemir,verb
+to desist,desistir,verb
+to differ,diferir,verb
+to reign,reinar,verb
+to sponsor,patrocinar,verb
+to reestablish or promote again the value of something,reivindicar,verb
+to send into,internar,verb
+to incite,incitar,verb
+to memorize,memorizar,verb
+to bake,hornear,verb
+to embody,encarnar,verb
+to harvest,cosechar,verb
+to file,archivar,verb
+to repress,reprimir,verb
+to brush,cepillar,verb
+to mosey,deambular,verb
+to spell,deletrear,verb
+to musicalise,musicar,verb
+to disarm,desarmar,verb
+to inlay,incrustar,verb
+to balance,balancear,verb
+to vacate,desalojar,verb
+to parade,desfilar,verb
+to scold,regañar,verb
+"to alternative form of ""jaquear#etymology 2""",hackear,verb
+to be seated,seer,verb
+to finish off,rematar,verb
+to feel sorry,compadecer,verb
+to corral,acorralar,verb
+to host,hospedar,verb
+to deport,deportar,verb
+to encode,codificar,verb
+to channel,canalizar,verb
+to retire,jubilar,verb
+to blind,cegar,verb
+to decompose,descomponer,verb
+to reappear,reaparecer,verb
+to maintain,atener,verb
+to detonate,detonar,verb
+to clog,atorar,verb
+to dismantle,desmontar,verb
+to exterminate,exterminar,verb
+to come to pass,acontecer,verb
+to prowl,merodear,verb
+to contaminate,contaminar,verb
+to endow,dotar,verb
+to snow,nevar,verb
+to alternate,alternar,verb
+to blink,parpadear,verb
+to suckle,mamar,verb
+to distrust,desconfiar,verb
+to shorten,acortar,verb
+to apply makeup or cosmetics to,maquillar,verb
+to export,exportar,verb
+to slap,abofetear,verb
+to track by smell,husmear,verb
+to condition,condicionar,verb
+to dilute,diluir,verb
+to shriek,chillar,verb
+to urge,instar,verb
+to harden,endurecer,verb
+to massacre,masacrar,verb
+to dock,arribar,verb
+to symbolize,simbolizar,verb
+to safeguard,amparar,verb
+to pulverize,machacar,verb
+to reconcile,reconciliar,verb
+to take over for,relevar,verb
+to predominate,predominar,verb
+to discount,descontar,verb
+to dissipate,disipar,verb
+to emigrate,emigrar,verb
+to decapitate,decapitar,verb
+to reaffirm,reafirmar,verb
+to nod,asentir,verb
+to omit,omitir,verb
+to endorse,avalar,verb
+to falsify,falsificar,verb
+to trample,pisotear,verb
+to gnaw,roer,verb
+to knock down,desplomar,verb
+to smelt,fundir,verb
+to obsess,obsesionar,verb
+to prescribe,recetar,verb
+to despair,desesperar,verb
+to roast,asar,verb
+to impregnate,impregnar,verb
+to reopen,reabrir,verb
+to resonate,resonar,verb
+to sap,minar,verb
+to reform,reformar,verb
+to reload,recargar,verb
+to prevent someone from sleeping,desvelar,verb
+to carry,acarrear,verb
+to implement,implementar,verb
+to button,abrochar,verb
+to redo,rehacer,verb
+to synthesize,sintetizar,verb
+to succumb,sucumbir,verb
+to silence,silenciar,verb
+to make much of,halagar,verb
+to overthrow,derrocar,verb
+to seize,apresar,verb
+to boast,alardear,verb
+to unburden,desahogar,verb
+to make possible,posibilitar,verb
+to linger,perdurar,verb
+to fight a bull,torear,verb
+to eradicate,erradicar,verb
+to knock out,noquear,verb
+to hold responsible,responsabilizar,verb
+to alarm,alarmar,verb
+to risk,aventurar,verb
+to inflate,inflar,verb
+to rectify,rectificar,verb
+to build the basis for,fundamentar,verb
+to fuse,fusionar,verb
+to ski,esquiar,verb
+to detail,puntualizar,verb
+to restart,reiniciar,verb
+to cleave,clivar,verb
+to digest,digerir,verb
+to put into motion,accionar,verb
+to portray,retratar,verb
+to incur,incurrir,verb
+to dazzle,deslumbrar,verb
+to bandage,vendar,verb
+to be delirious,delirar,verb
+to fracture,fracturar,verb
+to implore,implorar,verb
+to instruct,instruir,verb
+to catalogue,catalogar,verb
+to make out,vislumbrar,verb
+to cross out,tachar,verb
+to dip in tar,brear,verb
+to display,ostentar,verb
+to emanate,emanar,verb
+to outline,perfilar,verb
+to wiggle,menear,verb
+to be incumbent,incumbir,verb
+to extol,magnificar,verb
+to redeem,redimir,verb
+to overflow,desbordar,verb
+to exhale,exhalar,verb
+to grunt,gruñir,verb
+to polish,pulir,verb
+to minimize,minimizar,verb
+to specialize,especializar,verb
+to bat,batear,verb
+to initiate,entablar,verb
+to forge,forjar,verb
+to pile up,amontonar,verb
+to reel,tambalear,verb
+to immobilize,inmovilizar,verb
+to guard,custodiar,verb
+to stress,recalcar,verb
+to call out for,clamar,verb
+to comply with,acatar,verb
+to decay,decaer,verb
+to revoke,revocar,verb
+to visualize,visualizar,verb
+to court,cortejar,verb
+to clarify a concept,matizar,verb
+to grind,moler,verb
+to corrupt,corromper,verb
+to discredit,descalificar,verb
+to cover with blood,ensangrentar,verb
+to be in tune,entonar,verb
+to miss or yearn,añorar,verb
+to purify,purificar,verb
+to counteract,contrarrestar,verb
+to remove the lid,destapar,verb
+to venerate,venerar,verb
+to strip,despojar,verb
+to huddle,acurrucar,verb
+to refine,afinar,verb
+to debut,debutar,verb
+to supply with,abastecer,verb
+to use up or wear out,desgastar,verb
+to retract,retractar,verb
+to pamper,mimar,verb
+to censure,censurar,verb
+to mould,plasmar,verb
+to delimit,delimitar,verb
+to unwrap,desenvolver,verb
+to obstruct,estorbar,verb
+to nourish,nutrir,verb
+to hypnotize,hipnotizar,verb
+to sculpt,tallar,verb
+to sin,pecar,verb
+to veer,virar,verb
+to pump,bombear,verb
+to get dizzy,marear,verb
+to enumerate,enumerar,verb
+to deform,deformar,verb
+to desert,desertar,verb
+to materialise,materializar,verb
+to sedate,sedar,verb
+to monitor,monitorear,verb
+to handcuff,esposar,verb
+to interact,interactuar,verb
+to subsist,subsistir,verb
+to sadden,entristecer,verb
+to stack,apilar,verb
+to belittle,menospreciar,verb
+to hoard,acaparar,verb
+to decline,declinar,verb
+to increase or enlarge,agrandar,verb
+to unhang,descolgar,verb
+to dishonor,deshonrar,verb
+to simplify,simplificar,verb
+to evaporate,evaporar,verb
+to accredit a sum of money to the account of someone,abonar,verb
+to inflate or fill with air or liquid,hinchar,verb
+to make thin or slender,adelgazar,verb
+to compile,recopilar,verb
+to forsake,desamparar,verb
+to accredit,acreditar,verb
+to award,premiar,verb
+to inhibit,inhibir,verb
+to demonstrate,evidenciar,verb
+to glisten,relucir,verb
+to tune in,sintonizar,verb
+to be urgent,urgir,verb
+to roar,rugir,verb
+to dive,bucear,verb
+to scan,escanear,verb
+to tear to pieces,despedazar,verb
+to rock,mecer,verb
+to drip,gotear,verb
+to bring near,avecinar,verb
+to uproot,extirpar,verb
+to wear or put on shoes,calzar,verb
+to rewrite,reescribir,verb
+to shock,conmocionar,verb
+to iron,planchar,verb
+to prune,podar,verb
+to ventilate,ventilar,verb
+to slit the throat,degollar,verb
+to dumbfound,arrollar,verb
+to capitulate,capitular,verb
+to enchant,hechizar,verb
+to mold,moldear,verb
+to round,redondear,verb
+to restrict,restringir,verb
+to howl,aullar,verb
+to industrialize,industrializar,verb
+to advocate,abogar,verb
+to fail to complete,incumplir,verb
+to provide with,deparar,verb
+to raffle,sortear,verb
+to gild,dorar,verb
+to disintegrate,desintegrar,verb
+to commemorate,conmemorar,verb
+to revolt,revolcar,verb
+to congregate,congregar,verb
+to jam,atascar,verb
+to crown,coronar,verb
+to pair,emparejar,verb
+to frustrate,frustrar,verb
+to legitimize,legitimar,verb
+to mediate,mediar,verb
+to discourage,desanimar,verb
+to curl,rizar,verb
+to embroider,bordar,verb
+to fly over,sobrevolar,verb
+to pass on,finar,verb
+to tow,toar,verb
+to document,documentar,verb
+to get on,simpatizar,verb
+to suffocate,sofocar,verb
+to triplicate,triplicar,verb
+to superimpose,superponer,verb
+to dissuade,disuadir,verb
+to relegate,relegar,verb
+to amputate,amputar,verb
+to smooth,allanar,verb
+to afford,costear,verb
+to mend,recomponer,verb
+to lash out,arremeter,verb
+to hum,zumbar,verb
+to incinerate,incinerar,verb
+to gush forth,manar,verb
+to televise,televisar,verb
+to inflame,inflamar,verb
+to impound,embargar,verb
+to drench,empapar,verb
+to hoist,izar,verb
+to discriminate,discriminar,verb
+to object,objetar,verb
+to assail,acometer,verb
+to season,sazonar,verb
+to stipulate,estipular,verb
+to border,bordear,verb
+to second,secundar,verb
+to scour,restregar,verb
+to hospitalize,hospitalizar,verb
+to model,modelar,verb
+to fantasize,fantasear,verb
+to arbitrate,arbitrar,verb
+to clock in,fichar,verb
+to apheretic form of esperar,perar,verb
+to rehabilitate,rehabilitar,verb
+to allege,aducir,verb
+to echo,repercutir,verb
+to make similar,asemejar,verb
+to jump around,brincar,verb
+to pilot,pilotar,verb
+to ally,aliar,verb
+to indict,enjuiciar,verb
+to fulfill,colmar,verb
+to enslave,esclavizar,verb
+to spook,sobresaltar,verb
+to hinder,obstaculizar,verb
+to cry a little,lloriquear,verb
+to paw,escarbar,verb
+to drool,babear,verb
+to be inured to,habituar,verb
+to orbit,orbitar,verb
+to sob,sollozar,verb
+to abolish,abolir,verb
+to consign,consignar,verb
+to forecast,pronosticar,verb
+to clothe,arropar,verb
+to certify,certificar,verb
+to dust,espolvorear,verb
+to dare,osar,verb
+to fatigue,fatigar,verb
+to attenuate,atenuar,verb
+to reorganize,reorganizar,verb
+to propel,abalanzar,verb
+to acclaim,aclamar,verb
+to deal,comerciar,verb
+to sneeze,estornudar,verb
+to rediscover,reencontrar,verb
+to domesticate,domesticar,verb
+to legalize,legalizar,verb
+to recycle,reciclar,verb
+to make certain,afianzar,verb
+to infringe,infringir,verb
+to modernize,modernizar,verb
+to attest,atestiguar,verb
+to pinch,pellizcar,verb
+to come up,sobrevenir,verb
+to chain,encadenar,verb
+to clutch,empuñar,verb
+to sketch,esbozar,verb
+to bleach,blanquear,verb
+to perpetuate,perpetuar,verb
+to satiate,saciar,verb
+to bundle up,abrigar,verb
+to struggle,pujar,verb
+to gasp,jadear,verb
+to plug in,enchufar,verb
+to brandish,esgrimir,verb
+to transcribe,transcribir,verb
+to reactivate,reactivar,verb
+to formalize,formalizar,verb
+to surf,surfear,verb
+to draw near,arrimar,verb
+to irradiate,irradiar,verb
+to fine,multar,verb
+to paginate,paginar,verb
+to enliven,avivar,verb
+to oppose,contrariar,verb
+to enact,promulgar,verb
+to normalize,normalizar,verb
+to cloud,nublar,verb
+to die an agonizing death,agonizar,verb
+to revolutionize,revolucionar,verb
+to captivate,cautivar,verb
+to cause indigestion,estomagar,verb
+to electrocute,electrocutar,verb
+to throw off track,despistar,verb
+to package,empaquetar,verb
+to populate,poblar,verb
+to disembowel,destripar,verb
+to put a nappy,empañar,verb
+to knead,amasar,verb
+to disconcert,desconcertar,verb
+to disagree,discrepar,verb
+to reschedule,reprogramar,verb
+to suck up,succionar,verb
+to outrage,indignar,verb
+to box in a boxing match),boxear,verb
+to tame,domar,verb
+to banish,desterrar,verb
+to limp,cojear,verb
+to get up early,madrugar,verb
+to send away,ausentar,verb
+to unify,unificar,verb
+to move or shake,jactar,verb
+to reanimate,reanimar,verb
+to choke,atragantar,verb
+to instill,infundir,verb
+to snuff a candle,espabilar,verb
+to sharpen,agudizar,verb
+to exalt,exaltar,verb
+to ridicule,ridiculizar,verb
+to fondle,manosear,verb
+to repudiate,repudiar,verb
+to snore,roncar,verb
+to condense,condensar,verb
+to impassion,apasionar,verb
+to rumble,rumorear,verb
+to shave hair,rapar,verb
+to corner,arrinconar,verb
+to substitute,suplir,verb
+to disfigure,desfigurar,verb
+to vaccinate,vacunar,verb
+to stutter,balbucear,verb
+to mint,acuñar,verb
+to pirate,piratear,verb
+to regenerate,regenerar,verb
+to quote or set a price,cotizar,verb
+to profess,profesar,verb
+to inflict,infligir,verb
+to diversify,diversificar,verb
+to officiate,oficiar,verb
+to privatize,privatizar,verb
+to displease,desagradar,verb
+to counter-attack,contraatacar,verb
+to unbutton,desabrochar,verb
+to veto,vetar,verb
+to debase,avilar,verb
+to be in danger,peligrar,verb
+to remove hair from the body,depilar,verb
+to cause pity,apiadar,verb
+to ambush,emboscar,verb
+to dismember,descuartizar,verb
+to depose,deponer,verb
+to cope with,sobrellevar,verb
+to remodel,remodelar,verb
+to exonerate,exonerar,verb
+to hit with a spade,apalear,verb
+to sauté,saltear,verb
+to lobby,recabar,verb
+to label,etiquetar,verb
+to stupefy,entorpecer,verb
+to couple,acoplar,verb
+to go crazy,flipar,verb
+to glue,apegar,verb
+to assert,aseverar,verb
+to redefine,replantear,verb
+to chirp,piar,verb
+to sniff,olfatear,verb
+to mutate,mutar,verb
+to comfort,reconfortar,verb
+to shuffle,barajar,verb
+to creak,crujir,verb
+to compress,comprimir,verb
+to profane,profanar,verb
+to fragment,fragmentar,verb
+to clone,clonar,verb
+to inspire marvel,maravillar,verb
+to unmask,desenmascarar,verb
+to cause to grow fond of,encariñar,verb
+to glimpse,entrever,verb
+to soak,calar,verb
+to impute,imputar,verb
+to distill,destilar,verb
+to cause to blush,sonrojar,verb
+to dampen,humedecer,verb
+to fight for,propugnar,verb
+to palliate,paliar,verb
+to conjure,conjurar,verb
+to crucify,crucificar,verb
+to appease,aplacar,verb
+to file down or sand down,raspar,verb
+to sermonize,sermonear,verb
+to shine brightly,resplandecer,verb
+to wink,guiñar,verb
+to repel,repeler,verb
+to invalidate,invalidar,verb
+to redden,enrojecer,verb
+to coexist,coexistir,verb
+to take off,descalzar,verb
+to indebt,endeudar,verb
+to nurse,amamantar,verb
+to conform,cuadrar,verb
+to palpitate,palpitar,verb
+to flatter,adular,verb
+to hand down,legar,verb
+to survey land,acotar,verb
+to pacify,apaciguar,verb
+to take root,arraigar,verb
+to prostitute,prostituir,verb
+to gestate,gestar,verb
+to wolf,engullir,verb
+to grease,engrasar,verb
+to quiet,acallar,verb
+to become,devenir,verb
+to covet,codiciar,verb
+to wave,ondear,verb
+to socialize,socializar,verb
+to colonize,colonizar,verb
+to widen,ensanchar,verb
+to enunciate,enunciar,verb
+to skin,despellejar,verb
+to declare or brand as,tildar,verb
+to disseminate,diseminar,verb
+to enroll,matricular,verb
+to reprimand,reprender,verb
+to pucker,fruncir,verb
+to re-read,releer,verb
+to fell,talar,verb
+to warble,trinar,verb
+to crystallize,cristalizar,verb
+to touch up,retocar,verb
+to reminisce,rememorar,verb
+to disapprove,desaprobar,verb
+to contest,impugnar,verb
+to fly around,revolotear,verb
+to purge,purgar,verb
+to wilt,marchitar,verb
+to disillusion,desilusionar,verb
+to distort,distorsionar,verb
+to knife,acuchillar,verb
+to nest,anidar,verb
+to level out,nivelar,verb
+to do or say stupid things,tontear,verb
+to unload goods from crates,desempacar,verb
+to make a clean sweep,copar,verb
+to thaw,descongelar,verb
+to disgust,repugnar,verb
+to reelect,reelegir,verb
+to attribute,achacar,verb
+to complain,renegar,verb
+to milk,ordeñar,verb
+to cut up,trocear,verb
+to infer,inferir,verb
+to subsidize,subvencionar,verb
+to run low,escasear,verb
+to be far from,distar,verb
+to delegate,delegar,verb
+to enable,habilitar,verb
+to pedal,pedalear,verb
+to be uncouth,pirar,verb
+to dispense,dispensar,verb
+to fold repeatedly,replegar,verb
+to bargain,regatear,verb
+to plunge,zambullir,verb
+to injure the hips or loin,ringar,verb
+to mate,aparear,verb
+to undermine,socavar,verb
+to page or leaf through,hojear,verb
+to correspond,atañer,verb
+to daunt,acobardar,verb
+to foretell,augurar,verb
+to be shipwrecked,naufragar,verb
+to sip,sorber,verb
+to condiment,condimentar,verb
+to plow,surcar,verb
+to encrypt,encriptar,verb
+to mitigate,mitigar,verb
+to afflict,afligir,verb
+to apprehend,aprehender,verb
+to stem from,estribar,verb
+to bill,facturar,verb
+to crease,arrugar,verb
+to decant,decantar,verb
+to bag,embolsar,verb
+to gallop,galopar,verb
+to lose control,descontrolar,verb
+to gag,amordazar,verb
+to back water,ciar,verb
+to enlarge,amplificar,verb
+to rewind,rebobinar,verb
+to delight,regocijar,verb
+to regroup,reagrupar,verb
+to authenticate,autenticar,verb
+to harmonize,armonizar,verb
+to dislocate,dislocar,verb
+to spin,rotar,verb
+to besiege,asediar,verb
+to put or place in front of,anteponer,verb
+to make smaller,achicar,verb
+to eclipse,eclipsar,verb
+to budget,presuponer,verb
+to put in a series,seriar,verb
+to tone down,amortiguar,verb
+to trot,trotar,verb
+to call someone names,apodar,verb
+to cage,enjaular,verb
+to horrify,horrorizar,verb
+to petrify,petrificar,verb
+to slice,rebanar,verb
+to moderate,moderar,verb
+to collate,cotejar,verb
+to disdain,desdeñar,verb
+to hasten,aligerar,verb
+to sight,avistar,verb
+to sweeten,endulzar,verb
+to rig,amañar,verb
+to re-mark,remarcar,verb
+to infest,infestar,verb
+to intubate,intubar,verb
+to modulate,modular,verb
+to line,linear,verb
+to labor,laborar,verb
+to damage or injure,vulnerar,verb
+to transplant,trasplantar,verb
+to mutilate,mutilar,verb
+to flow together,confluir,verb
+to steep,remojar,verb
+to raise,realzar,verb
+to segregate,segregar,verb
+to air,airear,verb
+to fill,cundir,verb
+to riddle,acribillar,verb
+to add iron to,ferrar,verb
+to grope,tantear,verb
+to proliferate,proliferar,verb
+to use sparingly,escatimar,verb
+to structure,estructurar,verb
+to curdle,cuajar,verb
+to extort,extorsionar,verb
+to destabilize,desestabilizar,verb
+to fry lightly,rehogar,verb
+to refund,reintegrar,verb
+to digress,divagar,verb
+to mortgage,hipotecar,verb
+to reinvent,reinventar,verb
+to institutionalize,institucionalizar,verb
+to spout,chorrear,verb
+to fornicate,fornicar,verb
+to assist,socorrer,verb
+to auction,subastar,verb
+to exhort,exhortar,verb
+to abut,lindar,verb
+to maneuver,maniobrar,verb
+to predispose,predisponer,verb
+to transpire,transpirar,verb
+to defecate,defecar,verb
+to ravage,asolar,verb
+to synchronize,sincronizar,verb
+to cremate,cremar,verb
+to oxygenate,oxigenar,verb
+to streamline,agilizar,verb
+to deliberate,deliberar,verb
+to patent,patentar,verb
+to address someone informally with tú,tutear,verb
+to raise or hoist a standard or flag,arbolar,verb
+to rejuvenate,rejuvenecer,verb
+to take turns,turnar,verb
+to mortify,mortificar,verb
+to slow down,ralentizar,verb
+to inquire,inquirir,verb
+to intersperse,intercalar,verb
+to intercede,interceder,verb
+to run around,corretear,verb
+to reach a consensus on,consensuar,verb
+to remunerate,remunerar,verb
+to circumscribe,circunscribir,verb
+to injure fatally,malherir,verb
+to supplant,suplantar,verb
+to tense,tensar,verb
+to crawl,gatear,verb
+to exhale sharply,resoplar,verb
+to agglutinate,aglutinar,verb
+to expire,caducar,verb
+to search,rebuscar,verb
+to scheme,urdir,verb
+to disable,inutilizar,verb
+to stir up,alborotar,verb
+to restructure,reestructurar,verb
+to rinse,enjuagar,verb
+to requisition,requisar,verb
+to call by one's surname,apellidar,verb
+to bend,flexionar,verb
+to ferment,fermentar,verb
+to individualise,individualizar,verb
+to personify,personificar,verb
+to unsheathe,desenfundar,verb
+to usurp,usurpar,verb
+to glorify,glorificar,verb
+to hollow out,moscar,verb
+to bait,cebar,verb
+to redouble,redoblar,verb
+to ignore,desatender,verb
+to yawn,bostezar,verb
+to break wind,peer,verb
+to discern,discernir,verb
+to nationalize,nacionalizar,verb
+to make sure,cerciorar,verb
+to derail,descarrilar,verb
+to moisturize,hidratar,verb
+to rationalize,racionalizar,verb
+to mislay,extraviar,verb
+to babble,parlotear,verb
+to sing a shanty or work song,salomar,verb
+to thunder,tronar,verb
+to pluck,desplumar,verb
+to rhyme,rimar,verb
+to mess up,embarrar,verb
+to idealize,idealizar,verb
+to reincorporate,reincorporar,verb
+to be accurate,atinar,verb
+to embellish,embellecer,verb
+to sing or play out of tune,desafinar,verb
+to underlie,subyacer,verb
+to decimate,diezmar,verb
+to steal,afanar,verb
+to numb,entumecer,verb
+to screw in,enroscar,verb
+to cicatrize,cicatrizar,verb
+to defame,difamar,verb
+to brag,fanfarronear,verb
+to broadcast intended to be received by anyone with a receiver),retransmitir,verb
+to club,aporrear,verb
+to corrode,corroer,verb
+to raise anchor,levar,verb
+to orchestrate,orquestar,verb
+to bottle into a bottle for later consumption),embotellar,verb
+to drill,taladrar,verb
+to battle,batallar,verb
+to boycott,boicotear,verb
+to scare the shit out of,acojonar,verb
+to provoke into rebellion,sublevar,verb
+to soothe,serenar,verb
+to cause someone to become impatient,impacientar,verb
+to lash,hostigar,verb
+to type,teclear,verb
+to lasso,lazar,verb
+to prioritize,priorizar,verb
+to automate,automatizar,verb
+to strut,pavonear,verb
+to establish rules for,reglamentar,verb
+to rehouse,reubicar,verb
+to temper,templar,verb
+to make impossible,imposibilitar,verb
+to lessen,aminorar,verb
+to chant,corear,verb
+to germinate,germinar,verb
+to polarize,polarizar,verb
+to procreate,procrear,verb
+to make bitter,amargar,verb
+to exasperate,exasperar,verb
+to make sleepy,adormecer,verb
+to tattoo,tatuar,verb
+to grow dark,ensombrecer,verb
+to deflate,desinflar,verb
+to scorch,calcinar,verb
+to get along with,congeniar,verb
+to exemplify,ejemplificar,verb
+to reassign,reasignar,verb
+to misrepresent,tergiversar,verb
+to mislead,descarriar,verb
+to adulterate,adulterar,verb
+to oxidize,oxidar,verb
+to screw,atornillar,verb
+to score a basket,encestar,verb
+to cajole,engatusar,verb
+to cause erosion,erosionar,verb
+to utter,proferir,verb
+to stun,aturdir,verb
+to crash into,colisionar,verb
+to elucidate,dilucidar,verb
+to castrate,castrar,verb
+to belch,eructar,verb
+to entrench,atrincherar,verb
+to incarcerate,aprisionar,verb
+to wag one's tail,colear,verb
+to persevere,perseverar,verb
+to dramatize,dramatizar,verb
+to sheathe,enfundar,verb
+to refrigerate,refrigerar,verb
+to stage,escenificar,verb
+to reward,retribuir,verb
+to aim,asestar,verb
+to squander,prodigar,verb
+to decelerate,desacelerar,verb
+to hoodwink,embaucar,verb
+to recommence,recomenzar,verb
+to grab,asir,verb
+to reheat,recalentar,verb
+to exacerbate,exacerbar,verb
+to degenerate,degenerar,verb
+to embalm,embalsamar,verb
+to expropriate,expropiar,verb
+to disqualify,inhabilitar,verb
+to time,cronometrar,verb
+to snap,chasquear,verb
+to list,enlistar,verb
+to legislate,legislar,verb
+to mask,enmascarar,verb
+to strike down,fulminar,verb
+to equate,equiparar,verb
+to disinherit,desheredar,verb
+to compute,computar,verb
+to wane,menguar,verb
+to incubate,incubar,verb
+to pale,palidecer,verb
+to blur,difuminar,verb
+to recriminate,recriminar,verb
+to set,ambientar,verb
+to presage,presagiar,verb
+to snoop,curiosear,verb
+to make independent,independizar,verb
+to stage a raid,incursionar,verb
+to clot,coagular,verb
+to instigate,instigar,verb
+to swell up,engrosar,verb
+to capitalise,capitalizar,verb
+to squeak,rechinar,verb
+to maximise,maximizar,verb
+to validate,validar,verb
+to optimize,optimizar,verb
+to overvalue,sobreestimar,verb
+to devalue,devaluar,verb
+to improve,remendar,verb
+to punctuate,puntuar,verb
+to saddle,ensillar,verb
+to overload,sobrecargar,verb
+to prop up,apuntalar,verb
+to sterilize,esterilizar,verb
+to fluctuate,fluctuar,verb
+to cordon off,acordonar,verb
+to lyse,lisar,verb
+to ejaculate,eyacular,verb
+to anesthetize,anestesiar,verb
+to crack,cascar,verb
+to closely examine,escrutar,verb
+to publicize,publicitar,verb
+to favor,privilegiar,verb
+to revitalize,revitalizar,verb
+to unionise,sindicar,verb
+to extradite,extraditar,verb
+to go to extremes,extremar,verb
+to commune,comulgar,verb
+to bleat,balar,verb
+to disinfect,desinfectar,verb
+to cover with dust or powder,empolvar,verb
+to have a snack,merendar,verb
+to flay,desollar,verb
+to become weak,desfallecer,verb
+to bottle,enfrascar,verb
+to redirect,redirigir,verb
+to redecorate,redecorar,verb
+to camouflage,camuflar,verb
+to tax,gravar,verb
+to recline,reclinar,verb
+to exchange,canjear,verb
+to computerize,computarizar,verb
+to stew,guisar,verb
+to monopolize,monopolizar,verb
+to emulate,emular,verb
+to redound,redundar,verb
+to abbreviate,abreviar,verb
+to graze,pacer,verb
+to tenderize,mazar,verb
+to love vehemently,adamar,verb
+to hail,ensalzar,verb
+to entrance,extasiar,verb
+to scrutinize,escudriñar,verb
+to anguish,angustiar,verb
+to fertilize,fertilizar,verb
+to license,licenciar,verb
+to overlap,solapar,verb
+to penalize,penalizar,verb
+to crumble,desmenuzar,verb
+to audition,audicionar,verb
+to delineate,delinear,verb
+to unhitch,desenganchar,verb
+to dissent,disentir,verb
+to leave ajar,entornar,verb
+to nick,trincar,verb
+to blunt,despuntar,verb
+to reimburse,reembolsar,verb
+to peck,picotear,verb
+to raise awareness,sensibilizar,verb
+to subordinate,supeditar,verb
+to merit,ameritar,verb
+to detoxify,desintoxicar,verb
+to take down,apear,verb
+to shuck,desgranar,verb
+to teem,pulular,verb
+to suture,suturar,verb
+to immortalize,inmortalizar,verb
+to truncate,truncar,verb
+to doze or nap,dormitar,verb
+to weld,soldar,verb
+to systematize,sistematizar,verb
+to evict,desahuciar,verb
+to intermingle,entremezclar,verb
+to tan,broncear,verb
+to nibble,mordisquear,verb
+to reconquer,reconquistar,verb
+to transgress,transgredir,verb
+to assemble,ensamblar,verb
+to misunderstand,malentender,verb
+to renegotiate,renegociar,verb
+to shield,escudar,verb
+to besmirch,mancillar,verb
+to dissect,diseccionar,verb

@@ -1,11 +1,11 @@
 class CardsController < ApplicationController
   before_action :set_card, only: [:show, :edit, :update, :destroy]
 
-  FILTERS = %w[all nouns verbs mastered needs_practice].freeze
+  FILTERS = %w[all nouns verbs mastered needs_practice recent].freeze
 
   def index
     @filter = FILTERS.include?(params[:filter]) ? params[:filter] : "all"
-    @cards = current_user.cards.order(:english_text)
+    @cards = current_user.cards
 
     case @filter
     when "nouns"
@@ -19,6 +19,12 @@ class CardsController < ApplicationController
       practice_ids = current_user.user_card_stats.needs_practice.pluck(:card_id)
       @cards = @cards.where(id: practice_ids)
     end
+
+    @cards = @filter == "recent" ? @cards.order(created_at: :desc) : @cards.order(:english_text)
+
+    @batch_size = CardSeedImporter::DEFAULT_BATCH_SIZE
+    @noun_progress = CommonNounImporter.new(current_user).progress
+    @verb_progress = CommonVerbImporter.new(current_user).progress
   end
 
   def show
@@ -72,17 +78,24 @@ class CardsController < ApplicationController
 
   def import_common_nouns
     result = CommonNounImporter.new(current_user).call
-    redirect_to cards_path,
-                notice: "Added #{result[:created]} common noun cards (#{result[:skipped]} skipped as duplicates)."
+    redirect_to cards_path, notice: import_notice("noun", result)
   end
 
   def import_common_verbs
     result = CommonVerbImporter.new(current_user).call
-    redirect_to cards_path,
-                notice: "Added #{result[:created]} common verb cards (#{result[:skipped]} skipped as duplicates)."
+    redirect_to cards_path, notice: import_notice("verb", result)
   end
 
   private
+
+  def import_notice(type, result)
+    if result[:created].zero?
+      "You've already added all #{result[:total_seed]} of the most common #{type}s available."
+    else
+      "Added #{result[:created]} common #{type} cards. " \
+        "You now have #{result[:seed_owned]} of #{result[:total_seed]} common #{type}s."
+    end
+  end
 
   def set_card
     @card = current_user.cards.find(params[:id])

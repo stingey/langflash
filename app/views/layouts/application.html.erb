@@ -23,20 +23,38 @@
   </head>
 
   <body>
-    <main class="container">
-      <% if user_signed_in? %>
-        <nav class="top-nav">
-          <%= button_to "Quick Quiz", start_quiz_path(mode: :en_to_es), method: :post, class: "link-button" %>
-          <%= link_to "Dashboard", dashboard_path %>
-          <%= link_to "Cards", cards_path %>
-          <%= link_to "Progress", progress_path %>
-          <% if current_user.admin? %>
-            <%= link_to "Admin", admin_users_path %>
-          <% end %>
-          <%= button_to "Log out", destroy_user_session_path, method: :delete, class: "link-button" %>
-        </nav>
-      <% end %>
+    <% if user_signed_in? %>
+      <header class="site-header" data-controller="nav">
+        <div class="site-header-inner">
+          <%= link_to "Langflash", authenticated_root_path, class: "brand" %>
 
+          <button type="button"
+                  class="nav-toggle"
+                  aria-label="Open menu"
+                  aria-expanded="false"
+                  data-nav-target="toggle"
+                  data-action="click->nav#toggle">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+          </button>
+
+          <nav class="nav-links" data-nav-target="menu">
+            <%= link_to "Dashboard", dashboard_path, class: "nav-link", data: { action: "click->nav#close" } %>
+            <%= link_to "Cards", cards_path, class: "nav-link", data: { action: "click->nav#close" } %>
+            <%= link_to "Progress", progress_path, class: "nav-link", data: { action: "click->nav#close" } %>
+            <%= link_to "Leaderboard", leaderboard_path, class: "nav-link", data: { action: "click->nav#close" } %>
+            <% if current_user.admin? %>
+              <%= link_to "Admin", admin_users_path, class: "nav-link", data: { action: "click->nav#close" } %>
+            <% end %>
+            <%= button_to "Quick Quiz", start_quiz_path(mode: :en_to_es), method: :post, class: "link-button nav-cta" %>
+            <%= button_to "Log out", destroy_user_session_path, method: :delete, class: "link-button button-secondary" %>
+          </nav>
+        </div>
+      </header>
+    <% end %>
+
+    <main class="container">
       <% if notice.present? %>
         <p class="flash notice"><%= notice %></p>
       <% end %>

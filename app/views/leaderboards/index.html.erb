@@ -1,0 +1,41 @@
+<h1>Leaderboard</h1>
+<p><small>Most words mastered. You qualify once you have at least <%= @min_cards %> cards on your account.</small></p>
+
+<% if @users.any? %>
+  <table>
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>User</th>
+        <th>Mastered</th>
+        <th>Cards</th>
+        <th>Last active</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @users.each_with_index do |user, idx| %>
+        <% is_me = user.id == current_user.id %>
+        <tr class="<%= "row-correct" if is_me %>">
+          <td><%= idx + 1 %></td>
+          <td>
+            <%= user.email.to_s.split("@").first %><%= " (you)" if is_me %>
+          </td>
+          <td><%= user.mastered_count %></td>
+          <td><%= user.cards_count %></td>
+          <td>
+            <% if user.last_active_at.present? %>
+              <%= time_ago_in_words(user.last_active_at) %> ago
+            <% else %>
+              —
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <section class="card">
+    <p>No one has qualified for the leaderboard yet. Add at least <%= @min_cards %> cards to your account to be the first!</p>
+    <p><%= link_to "Add cards", cards_path, class: "button" %></p>
+  </section>
+<% end %>

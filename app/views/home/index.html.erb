@@ -1,7 +1,28 @@
-<h1>LangFlash</h1>
-<p>Spanish flashcards for kids with multiple-choice quizzes.</p>
+<% content_for(:title, "Langflash — Spanish flashcards for kids") %>
 
-<div class="actions">
-  <%= link_to "Sign up", new_user_registration_path, class: "button" %>
-  <%= link_to "Log in", new_user_session_path, class: "button button-secondary" %>
-</div>
+<section class="home-hero">
+  <h1>Langflash</h1>
+  <p class="home-tagline">
+    Friendly Spanish flashcards and quizzes that help kids build real vocabulary, one word at a time.
+  </p>
+
+  <div class="actions">
+    <%= link_to "Get started", new_user_registration_path, class: "button" %>
+    <%= link_to "I already have an account", new_user_session_path, class: "button button-secondary" %>
+  </div>
+</section>
+
+<section class="home-features">
+  <div class="home-feature">
+    <h3>Smart flashcards</h3>
+    <p>Build a personal deck of nouns and verbs, or import from our top-2000 list in batches.</p>
+  </div>
+  <div class="home-feature">
+    <h3>Multiple-choice quizzes</h3>
+    <p>Quick quizzes that match question type to answer type — nouns with nouns, verbs with verbs.</p>
+  </div>
+  <div class="home-feature">
+    <h3>Track mastery</h3>
+    <p>See your streaks, accuracy, and which words you've truly mastered on your progress page.</p>
+  </div>
+</section>

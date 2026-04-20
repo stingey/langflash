@@ -2,14 +2,34 @@
 <p><strong>Total cards:</strong> <span id="cards-total-count"><%= @cards.count %></span></p>
 <div class="actions">
   <%= link_to "Add New Card", new_card_path, class: "button" %>
-  <%= button_to "Add 100 Most Common Nouns",
-                import_common_nouns_cards_path,
-                method: :post,
-                class: "button button-secondary" %>
-  <%= button_to "Add 100 Most Common Verbs",
-                import_common_verbs_cards_path,
-                method: :post,
-                class: "button button-secondary" %>
+
+  <% if @noun_progress[:seed_owned] >= @noun_progress[:total_seed] %>
+    <button type="button"
+            class="button button-secondary"
+            disabled
+            title="You've added every common noun in our list">
+      All <%= @noun_progress[:total_seed] %> common nouns added
+    </button>
+  <% else %>
+    <%= button_to "Add #{@batch_size} common nouns (#{@noun_progress[:seed_owned]}/#{@noun_progress[:total_seed]} added)",
+                  import_common_nouns_cards_path,
+                  method: :post,
+                  class: "button button-secondary" %>
+  <% end %>
+
+  <% if @verb_progress[:seed_owned] >= @verb_progress[:total_seed] %>
+    <button type="button"
+            class="button button-secondary"
+            disabled
+            title="You've added every common verb in our list">
+      All <%= @verb_progress[:total_seed] %> common verbs added
+    </button>
+  <% else %>
+    <%= button_to "Add #{@batch_size} common verbs (#{@verb_progress[:seed_owned]}/#{@verb_progress[:total_seed]} added)",
+                  import_common_verbs_cards_path,
+                  method: :post,
+                  class: "button button-secondary" %>
+  <% end %>
 </div>
 
 <nav class="filter-pills" aria-label="Card filters">
@@ -18,7 +38,8 @@
     ["nouns", "Nouns"],
     ["verbs", "Verbs"],
     ["mastered", "Mastered"],
-    ["needs_practice", "Needs Practice"]
+    ["needs_practice", "Needs Practice"],
+    ["recent", "Recently Added"]
   ].each do |slug, label| %>
     <%= link_to label,
                 cards_path(filter: slug),
@@ -49,6 +70,7 @@
     <% when "verbs" %>No verb cards yet.
     <% when "mastered" %>You haven't mastered any cards yet. Keep practicing!
     <% when "needs_practice" %>Nice — no cards are giving you trouble right now.
+    <% when "recent" %>No cards yet — add some to see them here.
     <% else %>No cards yet.
     <% end %>
   </p>

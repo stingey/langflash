@@ -1,5 +1,5 @@
 class LeaderboardsController < ApplicationController
-  MIN_CARDS_TO_QUALIFY = 100
+  MIN_CARDS_TO_QUALIFY = 25
 
   def index
     @min_cards = MIN_CARDS_TO_QUALIFY

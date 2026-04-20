@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for(:title) || "Langflash" %></title>
+    <title><%= content_for(:title) || "LangFlash" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
@@ -26,7 +26,7 @@
     <% if user_signed_in? %>
       <header class="site-header" data-controller="nav">
         <div class="site-header-inner">
-          <%= link_to "Langflash", authenticated_root_path, class: "brand" %>
+          <%= link_to "LangFlash", authenticated_root_path, class: "brand" %>
 
           <button type="button"
                   class="nav-toggle"

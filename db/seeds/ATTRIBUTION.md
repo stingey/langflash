@@ -17,7 +17,7 @@ collection:
   licensed **CC-BY 4.0**.
 
 These CSVs are licensed under **CC-BY-SA 4.0** as a derivative work of
-CC-BY-SA-licensed inputs. The rest of the Langflash codebase is under a
+CC-BY-SA-licensed inputs. The rest of the LangFlash codebase is under a
 separate license; the CC-BY-SA obligation applies only to these CSV files.
 
 To regenerate, see `script/build_seed_csvs.rb`.

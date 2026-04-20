@@ -24,7 +24,7 @@ module Admin
       @incorrect_count = @attempts_count - @correct_count
       @accuracy = @user.quiz_accuracy
       @mastered_count = @user.user_card_stats.mastered.count
-      @recent_cards = @user.cards.order(created_at: :desc).limit(6)
+      @cards = @user.cards.includes(:user_card_stat).order(created_at: :desc)
       @recent_quizzes = @user.quiz_sessions.completed
                              .includes(:quiz_attempts)
                              .order(completed_at: :desc)

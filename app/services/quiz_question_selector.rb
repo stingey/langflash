@@ -1,7 +1,19 @@
 class QuizQuestionSelector
   FALLBACK_CHOICES = {
-    en_to_es: %w[casa perro gato manzana escuela amigo agua sol libro mesa],
-    es_to_en: %w[house dog cat apple school friend water sun book table]
+    en_to_es: {
+      "noun" => [
+        "la casa", "el perro", "el gato", "la manzana", "la escuela",
+        "el amigo", "el agua", "el sol", "el libro", "la mesa"
+      ],
+      "verb" => %w[correr comer beber hablar caminar leer escribir dormir cantar mirar]
+    },
+    es_to_en: {
+      "noun" => %w[house dog cat apple school friend water sun book table],
+      "verb" => [
+        "to run", "to eat", "to drink", "to speak", "to walk",
+        "to read", "to write", "to sleep", "to sing", "to watch"
+      ]
+    }
   }.freeze
 
   def initialize(user:)
@@ -21,12 +33,21 @@ class QuizQuestionSelector
   end
 
   def choices_for(card:, mode:, count: 4)
-    correct_choice = mode == "en_to_es" ? card.spanish_text : card.english_text
-    pool = @user.cards.where.not(id: card.id).pluck(mode == "en_to_es" ? :spanish_text : :english_text)
+    answer_column = mode == "en_to_es" ? :spanish_text : :english_text
+    correct_choice = card.public_send(answer_column)
+
+    pool = @user.cards
+      .where(part_of_speech: card.part_of_speech)
+      .where.not(id: card.id)
+      .pluck(answer_column)
     distractors = pool.sample(count - 1).map(&:to_s)
     choices = ([correct_choice.to_s] + distractors).uniq
 
-    fallback_pool = FALLBACK_CHOICES.fetch(mode.to_sym).dup.shuffle
+    fallback_pool = FALLBACK_CHOICES
+      .fetch(mode.to_sym, {})
+      .fetch(card.part_of_speech, [])
+      .dup
+      .shuffle
     while choices.size < count && fallback_pool.any?
       candidate = fallback_pool.shift
       choices << candidate unless choices.include?(candidate)

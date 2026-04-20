@@ -44,13 +44,53 @@
 </section>
 
 <section class="card">
-  <h2>Recently Added Cards</h2>
-  <% if @recent_cards.any? %>
-    <ul>
-      <% @recent_cards.each do |card| %>
-        <li><%= card.spanish_text %> <small>(<%= card.english_text %>)</small></li>
-      <% end %>
-    </ul>
+  <h2>Cards (<%= @cards.size %>)</h2>
+  <% if @cards.any? %>
+    <table>
+      <thead>
+        <tr>
+          <th>English</th>
+          <th>Spanish</th>
+          <th>Type</th>
+          <th>Attempts</th>
+          <th>Correct</th>
+          <th>Mastery</th>
+          <th>Streak</th>
+          <th>Status</th>
+          <th>Last seen</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @cards.each do |card| %>
+          <% stat = card.user_card_stat %>
+          <%
+            row_class, status_label =
+              if stat.blank? || stat.total_attempts.zero?
+                ["", "New"]
+              elsif stat.mastery_score > UserCardStat::MASTERY_THRESHOLD &&
+                    stat.total_attempts >= UserCardStat::MASTERY_MIN_ATTEMPTS
+                ["row-correct", "Mastered"]
+              elsif stat.incorrect_attempts.positive? &&
+                    stat.mastery_score < UserCardStat::MASTERY_THRESHOLD
+                ["row-incorrect", "Needs practice"]
+              else
+                ["", "Learning"]
+              end
+          %>
+          <tr class="<%= row_class %>">
+            <td><%= card.english_text %></td>
+            <td><%= card.spanish_text %></td>
+            <td><%= card.part_of_speech %></td>
+            <td><%= stat&.total_attempts || 0 %></td>
+            <td><%= stat&.correct_attempts || 0 %></td>
+            <td><%= stat ? "#{stat.mastery_score}%" : "—" %></td>
+            <td><%= stat&.streak || 0 %></td>
+            <td><%= status_label %></td>
+            <td><%= stat&.last_seen_at ? "#{time_ago_in_words(stat.last_seen_at)} ago" : "—" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
   <% else %>
     <p>This user hasn't added any cards yet.</p>
   <% end %>

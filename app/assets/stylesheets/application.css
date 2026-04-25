@@ -579,6 +579,67 @@ form.button_to {
 
 .choice-button {
   text-align: left;
+  transition: transform 0.08s ease, background-color 0.15s ease,
+    box-shadow 0.15s ease, opacity 0.2s ease;
+}
+
+.choice-button:hover {
+  background: #1d4ed8;
+}
+
+.choice-button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.35);
+}
+
+.choice-button:active,
+.choice-button.is-pressed {
+  transform: scale(0.96);
+  background: #1e3a8a;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.18);
+}
+
+.choice-button.is-pressed {
+  transition: transform 0.12s ease, background-color 0.12s ease,
+    box-shadow 0.12s ease;
+}
+
+.choice-button[disabled] {
+  opacity: 0.55;
+  cursor: wait;
+}
+
+@keyframes quiz-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.quiz-screen {
+  animation: quiz-fade-in 0.28s ease-out both;
+}
+
+.quiz-screen.is-leaving {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 0.18s ease-in, transform 0.18s ease-in;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quiz-screen,
+  .quiz-screen.is-leaving,
+  .choice-button,
+  .choice-button.is-pressed {
+    animation: none;
+    transition: none;
+    transform: none;
+  }
 }
 
 .quiz-screen h1,

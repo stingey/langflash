@@ -1,5 +1,13 @@
 <section class="quiz-results-screen">
-<h1>Quiz Results</h1>
+<h1>
+  Quiz Results
+  <% if @quiz_session && !@quiz_session.category_all? %>
+    <span class="quiz-category-badge"><%= @quiz_session.category.pluralize.titleize %> only</span>
+  <% end %>
+  <% if @quiz_session&.hard? %>
+    <span class="quiz-difficulty-badge">Hard mode</span>
+  <% end %>
+</h1>
 <p class="quiz-score"><strong>Score:</strong> <%= @correct_count %> / <%= @total_count %> (<%= @accuracy %>%)</p>
 
 <table>

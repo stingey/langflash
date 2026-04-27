@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2026_04_19_220000) do
+ActiveRecord::Schema[8.0].define(version: 2026_04_25_164400) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -49,6 +49,8 @@ ActiveRecord::Schema[8.0].define(version: 2026_04_19_220000) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "part_of_speech", default: "noun", null: false
+    t.integer "frequency_rank"
+    t.index ["frequency_rank"], name: "index_cards_on_frequency_rank"
     t.index ["part_of_speech"], name: "index_cards_on_part_of_speech"
     t.index ["user_id", "english_text", "part_of_speech"], name: "index_cards_on_user_id_and_english_text_and_pos", unique: true
     t.index ["user_id"], name: "index_cards_on_user_id"
@@ -79,6 +81,8 @@ ActiveRecord::Schema[8.0].define(version: 2026_04_19_220000) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "question_count", default: 10, null: false
+    t.integer "difficulty", default: 0, null: false
+    t.string "category", default: "all", null: false
     t.index ["user_id"], name: "index_quiz_sessions_on_user_id"
   end
 

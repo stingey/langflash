@@ -22,11 +22,21 @@ class QuizzesController < ApplicationController
 
     mode = params[:mode].presence_in(%w[en_to_es es_to_en]) || "en_to_es"
     question_count = params[:question_count].to_i.presence_in(QuizSession::ALLOWED_QUESTION_COUNTS) || 10
+    difficulty = params[:difficulty].presence_in(QuizSession::ALLOWED_DIFFICULTIES) || "normal"
+    category = params[:category].presence_in(QuizSession::ALLOWED_CATEGORIES) || "all"
+
+    if category != "all" && !current_user.cards.exists?(part_of_speech: category)
+      redirect_to cards_path,
+                  alert: "Add at least one #{category} card before starting a #{category}-only quiz."
+      return
+    end
 
     @quiz_session = current_user.quiz_sessions.create!(
       mode: mode,
       started_at: Time.current,
-      question_count: question_count
+      question_count: question_count,
+      difficulty: difficulty,
+      category: category
     )
 
     session[:quiz_session_id] = @quiz_session.id
@@ -104,7 +114,11 @@ class QuizzesController < ApplicationController
     quiz_session = current_quiz_session
     return if quiz_session.blank?
 
-    selector = QuizQuestionSelector.new(user: current_user)
+    selector = QuizQuestionSelector.new(
+      user: current_user,
+      difficulty: quiz_session.difficulty,
+      category: quiz_session.category
+    )
     recent_ids = quiz_session.quiz_attempts.order(position: :desc).limit(3).pluck(:card_id)
     card = selector.next_card(recent_ids: recent_ids)
     card ||= current_user.cards.sample

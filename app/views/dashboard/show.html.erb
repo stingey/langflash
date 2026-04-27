@@ -43,13 +43,40 @@
   </div>
 
   <div class="quiz-launcher">
-    <h3>Spanish &rarr; English</h3>
+    <h3>Nouns only</h3>
     <div class="actions">
       <% QuizSession::ALLOWED_QUESTION_COUNTS.each do |count| %>
         <%= button_to "#{count} questions",
-                      start_quiz_path(mode: :es_to_en, question_count: count),
+                      start_quiz_path(mode: :en_to_es, question_count: count, category: :noun),
                       method: :post,
                       class: "button button-secondary" %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="quiz-launcher">
+    <h3>Verbs only</h3>
+    <div class="actions">
+      <% QuizSession::ALLOWED_QUESTION_COUNTS.each do |count| %>
+        <%= button_to "#{count} questions",
+                      start_quiz_path(mode: :en_to_es, question_count: count, category: :verb),
+                      method: :post,
+                      class: "button button-secondary" %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="quiz-launcher">
+    <h3>Hard mode &mdash; rare words from your bank</h3>
+    <p class="quiz-launcher-hint">
+      Pulls only from the rarest tiers of words you've collected, weighted toward the rarest.
+    </p>
+    <div class="actions">
+      <% QuizSession::ALLOWED_QUESTION_COUNTS.each do |count| %>
+        <%= button_to "#{count} questions",
+                      start_quiz_path(mode: :en_to_es, question_count: count, difficulty: :hard),
+                      method: :post,
+                      class: "button button-danger" %>
       <% end %>
     </div>
   </div>

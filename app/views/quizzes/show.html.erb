@@ -1,5 +1,13 @@
 <section class="quiz-screen" data-controller="quiz">
-  <h1>Quiz Time</h1>
+  <h1>
+    Quiz Time
+    <% unless @quiz_session.category_all? %>
+      <span class="quiz-category-badge"><%= @quiz_session.category.pluralize.titleize %> only</span>
+    <% end %>
+    <% if @quiz_session.hard? %>
+      <span class="quiz-difficulty-badge">Hard mode</span>
+    <% end %>
+  </h1>
   <p class="quiz-progress">Question <%= @question_number %> of <%= @quiz_session.question_count %></p>
   <p class="quiz-prompt"><span><%= @question[:prompt_text] %></span></p>
 

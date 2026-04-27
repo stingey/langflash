@@ -4,6 +4,7 @@ require "set"
 class CardSeedImporter
   SEEDS_DIR = Rails.root.join("db", "seeds").freeze
   DEFAULT_BATCH_SIZE = 25
+  RANK_BUCKET_SIZE = 100
 
   def self.import(user, csv_filename, batch_size: DEFAULT_BATCH_SIZE)
     new(user, SEEDS_DIR.join(csv_filename)).call(batch_size: batch_size)
@@ -35,7 +36,8 @@ class CardSeedImporter
       @user.cards.create!(
         english_text: row[:english],
         spanish_text: row[:spanish],
-        part_of_speech: row[:part_of_speech]
+        part_of_speech: row[:part_of_speech],
+        frequency_rank: row[:frequency_rank]
       )
     end
 
@@ -57,13 +59,18 @@ class CardSeedImporter
   private
 
   def valid_rows
-    @valid_rows ||= CSV.read(@csv_path, headers: true).filter_map do |row|
+    @valid_rows ||= CSV.read(@csv_path, headers: true).each_with_index.filter_map do |row, idx|
       english = row["english"].to_s.strip.downcase
       spanish = row["spanish"].to_s.strip.downcase
       pos = row["part_of_speech"].to_s.strip.downcase.presence || "noun"
       next if english.blank? || spanish.blank?
 
-      { english: english, spanish: spanish, part_of_speech: pos }
+      {
+        english: english,
+        spanish: spanish,
+        part_of_speech: pos,
+        frequency_rank: (idx / RANK_BUCKET_SIZE) + 1
+      }
     end
   end
 

@@ -520,6 +520,34 @@ form.button_to {
   color: #374151;
 }
 
+.quiz-launcher-hint {
+  margin: 0 0 0.5rem;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.quiz-difficulty-badge,
+.quiz-category-badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.quiz-difficulty-badge {
+  background: #b91c1c;
+}
+
+.quiz-category-badge {
+  background: #475569;
+}
+
 .filter-pills {
   display: flex;
   flex-wrap: wrap;

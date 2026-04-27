@@ -16,13 +16,20 @@ class QuizQuestionSelector
     }
   }.freeze
 
-  def initialize(user:)
+  ALLOWED_CATEGORIES = %w[all noun verb].freeze
+
+  def initialize(user:, difficulty: :normal, category: "all")
     @user = user
+    @difficulty = difficulty.to_sym
+    @category = category.to_s.presence_in(ALLOWED_CATEGORIES) || "all"
     @stats_by_card_id = @user.user_card_stats.index_by(&:card_id)
   end
 
   def next_card(recent_ids: [], hard_exclude_ids: [])
-    cards = @user.cards.where.not(id: hard_exclude_ids).to_a
+    scope = @user.cards.where.not(id: hard_exclude_ids)
+    scope = scope.where(part_of_speech: @category) unless @category == "all"
+    cards = scope.to_a
+    cards = restrict_to_hard_pool(cards) if hard_mode?
     return nil if cards.empty?
 
     recent_ids = recent_ids.map(&:to_i)
@@ -58,8 +65,24 @@ class QuizQuestionSelector
 
   private
 
+  def hard_mode?
+    @difficulty == :hard
+  end
+
+  # In hard mode we narrow the pool to the rarest portion of the user's bank.
+  # Cards without a frequency rank (e.g. user-created custom cards) are
+  # excluded for now -- they can be revisited later.
+  def restrict_to_hard_pool(cards)
+    ranked = cards.select { |card| card.frequency_rank.present? }
+    return [] if ranked.empty?
+
+    max_tier = ranked.map(&:frequency_rank).max
+    threshold = (max_tier / 2.0).ceil
+    ranked.select { |card| card.frequency_rank >= threshold }
+  end
+
   def weighted_sample(cards)
-    weighted = cards.map { |card| [card, card_weight(@stats_by_card_id[card.id])] }
+    weighted = cards.map { |card| [card, card_weight(card)] }
     total_weight = weighted.sum { |(_, weight)| weight }
     return cards.sample if total_weight <= 0
 
@@ -73,7 +96,12 @@ class QuizQuestionSelector
     weighted.last.first
   end
 
-  def card_weight(stat)
+  def card_weight(card)
+    base = base_weight(@stats_by_card_id[card.id])
+    hard_mode? ? base * rarity_multiplier(card.frequency_rank) : base
+  end
+
+  def base_weight(stat)
     return 4.0 if stat.blank?
 
     incorrect_boost = stat.incorrect_attempts * 2.0
@@ -89,6 +117,15 @@ class QuizQuestionSelector
 
     raw_weight = 1.0 + incorrect_boost + low_accuracy_boost + overdue_bonus - streak_penalty
     raw_weight.clamp(1.0, 15.0)
+  end
+
+  # Linear boost so rarer tiers within the hard pool dominate. Tier 1 = 1x,
+  # each tier above adds 0.2x, capped to keep the most extreme tiers from
+  # overwhelming everything else.
+  def rarity_multiplier(rank)
+    return 1.0 if rank.blank?
+
+    (1.0 + (rank - 1) * 0.2).clamp(1.0, 5.0)
   end
 
   def rand

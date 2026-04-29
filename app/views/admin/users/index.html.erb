@@ -17,15 +17,19 @@
   </thead>
   <tbody>
     <% @users.each do |user| %>
-      <% accuracy = user.attempts_count.to_i.zero? ? 0.0 : ((user.correct_count.to_f / user.attempts_count) * 100).round(1) %>
+      <% cards_count = @cards_counts[user.id].to_i %>
+      <% attempts_count = @attempts_counts[user.id].to_i %>
+      <% correct_count = @correct_counts[user.id].to_i %>
+      <% mastered_count = @mastered_counts[user.id].to_i %>
+      <% accuracy = attempts_count.zero? ? 0.0 : ((correct_count.to_f / attempts_count) * 100).round(1) %>
       <tr>
         <td><%= user.email %></td>
         <td><%= user.created_at.to_date.iso8601 %></td>
         <td><%= user.admin? ? "Yes" : "" %></td>
-        <td><%= user.cards_count %></td>
-        <td><%= user.mastered_count %></td>
-        <td><%= user.attempts_count %></td>
-        <td><%= user.correct_count %></td>
+        <td><%= cards_count %></td>
+        <td><%= mastered_count %></td>
+        <td><%= attempts_count %></td>
+        <td><%= correct_count %></td>
         <td><%= accuracy %>%</td>
         <td><%= link_to "View dashboard", admin_user_path(user) %></td>
       </tr>

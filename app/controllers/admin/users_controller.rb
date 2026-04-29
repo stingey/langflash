@@ -1,19 +1,13 @@
 module Admin
   class UsersController < BaseController
     def index
-      @users = User.left_joins(:cards, :quiz_attempts, :user_card_stats)
-                   .select(<<~SQL.squish)
-                     users.*,
-                     COUNT(DISTINCT cards.id) AS cards_count,
-                     COUNT(DISTINCT quiz_attempts.id) AS attempts_count,
-                     COUNT(DISTINCT quiz_attempts.id) FILTER (WHERE quiz_attempts.correct) AS correct_count,
-                     COUNT(DISTINCT user_card_stats.id) FILTER (
-                       WHERE user_card_stats.mastery_score > #{UserCardStat::MASTERY_THRESHOLD}
-                       AND user_card_stats.total_attempts >= #{UserCardStat::MASTERY_MIN_ATTEMPTS}
-                     ) AS mastered_count
-                   SQL
-                   .group("users.id")
-                   .order("users.created_at DESC")
+      @users = User.order(created_at: :desc).to_a
+      user_ids = @users.map(&:id)
+
+      @cards_counts = Card.where(user_id: user_ids).group(:user_id).count
+      @attempts_counts = QuizAttempt.where(user_id: user_ids).group(:user_id).count
+      @correct_counts = QuizAttempt.where(user_id: user_ids, correct: true).group(:user_id).count
+      @mastered_counts = UserCardStat.mastered.where(user_id: user_ids).group(:user_id).count
     end
 
     def show

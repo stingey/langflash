@@ -1,30 +1,46 @@
 <h1>Leaderboard</h1>
-<p><small>Most words mastered. You qualify once you have at least <%= @min_cards %> cards on your account.</small></p>
+<p><small>
+  Ranked by quiz accuracy.
+  You qualify with at least <%= @min_attempts %> answers
+  <%= @period == "all" ? "all-time" : "in the #{@period_label.downcase}" %>.
+</small></p>
 
-<% if @users.any? %>
+<nav class="leaderboard-periods" style="margin-bottom: 1rem;">
+  <% @periods.each do |key, config| %>
+    <% if key == @period %>
+      <strong><%= config[:label] %></strong>
+    <% else %>
+      <%= link_to config[:label], leaderboard_path(period: key) %>
+    <% end %>
+    <%= " · " unless key == @periods.keys.last %>
+  <% end %>
+</nav>
+
+<% if @entries.any? %>
   <table>
     <thead>
       <tr>
         <th>Rank</th>
         <th>User</th>
-        <th>Mastered</th>
-        <th>Cards</th>
-        <th>Last active</th>
+        <th>Accuracy</th>
+        <th>Answers</th>
+        <th>Last attempt</th>
       </tr>
     </thead>
     <tbody>
-      <% @users.each_with_index do |user, idx| %>
+      <% @entries.each_with_index do |entry, idx| %>
+        <% user = entry[:user] %>
         <% is_me = user.id == current_user.id %>
         <tr class="<%= "row-correct" if is_me %>">
           <td><%= idx + 1 %></td>
           <td>
             <%= user.email.to_s.split("@").first %><%= " (you)" if is_me %>
           </td>
-          <td><%= user.mastered_count %></td>
-          <td><%= user.cards_count %></td>
+          <td><%= entry[:accuracy] %>%</td>
+          <td><%= entry[:correct] %> / <%= entry[:total] %></td>
           <td>
-            <% if user.last_active_at.present? %>
-              <%= time_ago_in_words(user.last_active_at) %> ago
+            <% if entry[:last_attempt_at].present? %>
+              <%= time_ago_in_words(entry[:last_attempt_at]) %> ago
             <% else %>
               —
             <% end %>
@@ -35,7 +51,8 @@
   </table>
 <% else %>
   <section class="card">
-    <p>No one has qualified for the leaderboard yet. Add at least <%= @min_cards %> cards to your account to be the first!</p>
-    <p><%= link_to "Add cards", cards_path, class: "button" %></p>
+    <p>No one has qualified for the <%= @period_label.downcase %> leaderboard yet.
+       Answer at least <%= @min_attempts %> quiz questions to be the first!</p>
+    <p><%= link_to "Take a quiz", quiz_path, class: "button" %></p>
   </section>
 <% end %>

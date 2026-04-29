@@ -1,22 +1,53 @@
 class LeaderboardsController < ApplicationController
-  MIN_CARDS_TO_QUALIFY = 25
+  PERIODS = {
+    "week"  => { label: "Past week",  duration: 1.week,  min_attempts: 20 },
+    "month" => { label: "Past month", duration: 1.month, min_attempts: 50 },
+    "all"   => { label: "All time",   duration: nil,     min_attempts: 200 }
+  }.freeze
+
+  DEFAULT_PERIOD = "week"
 
   def index
-    @min_cards = MIN_CARDS_TO_QUALIFY
+    @period = PERIODS.key?(params[:period]) ? params[:period] : DEFAULT_PERIOD
+    period_config = PERIODS[@period]
+    @period_label = period_config[:label]
+    @min_attempts = period_config[:min_attempts]
+    @periods = PERIODS
 
-    @users = User
-      .left_joins(:cards, :user_card_stats)
-      .select(<<~SQL.squish)
-        users.*,
-        COUNT(DISTINCT cards.id) AS cards_count,
-        COUNT(DISTINCT user_card_stats.id) FILTER (
-          WHERE user_card_stats.mastery_score > #{UserCardStat::MASTERY_THRESHOLD}
-          AND user_card_stats.total_attempts >= #{UserCardStat::MASTERY_MIN_ATTEMPTS}
-        ) AS mastered_count,
-        MAX(user_card_stats.last_seen_at) AS last_active_at
-      SQL
-      .group("users.id")
-      .having("COUNT(DISTINCT cards.id) >= ?", MIN_CARDS_TO_QUALIFY)
-      .order(Arel.sql("mastered_count DESC, last_active_at DESC NULLS LAST, users.created_at ASC"))
+    scope = QuizAttempt.all
+    if period_config[:duration]
+      @since = period_config[:duration].ago
+      scope = scope.where("quiz_attempts.created_at >= ?", @since)
+    end
+
+    rows = scope
+      .group(:user_id)
+      .pluck(
+        :user_id,
+        Arel.sql("COUNT(*)"),
+        Arel.sql("SUM(CASE WHEN correct THEN 1 ELSE 0 END)"),
+        Arel.sql("MAX(created_at)")
+      )
+
+    qualifying = rows.filter_map do |user_id, total, correct, last_at|
+      total = total.to_i
+      next if total < @min_attempts
+
+      correct = correct.to_i
+      {
+        user_id: user_id,
+        total: total,
+        correct: correct,
+        accuracy: (correct.to_f / total * 100).round(1),
+        last_attempt_at: last_at
+      }
+    end
+
+    users_by_id = User.where(id: qualifying.map { |r| r[:user_id] }).index_by(&:id)
+
+    @entries = qualifying
+      .sort_by { |r| [-r[:accuracy], -r[:total], users_by_id[r[:user_id]]&.created_at || Time.current] }
+      .map { |r| r.merge(user: users_by_id[r[:user_id]]) }
+      .reject { |r| r[:user].nil? }
   end
 end
